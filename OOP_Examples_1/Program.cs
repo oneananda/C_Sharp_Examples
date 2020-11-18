@@ -40,3 +40,13 @@ namespace C_Sharp_OOP_1
         }
     }
 }
+
+//Output:
+
+//In BaseClass1 constructor
+
+//In BaseClass1 constructor
+//In DerivedClass1 constructor
+
+//In BaseClass1 constructor
+//In DerivedClass1 constructor
