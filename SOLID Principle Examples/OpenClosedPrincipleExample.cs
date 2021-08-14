@@ -49,7 +49,6 @@ namespace OpenClosedPrincipleExample
         Word
     }
 
-
     public abstract class WithOCP_DocumentAbs
     {
         public virtual string DocumentSavePath(DocumentType _DocumentType)
