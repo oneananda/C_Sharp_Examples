@@ -311,7 +311,6 @@ for (int i = 0; i < emailCollection.Count; i++)
 {
 listBox1.Items.Add(emailCollection[i].ToString());
 }
-
 }
 }
 }
