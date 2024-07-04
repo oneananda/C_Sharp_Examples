@@ -34,4 +34,14 @@ This example demonstrates how to use a `Func` delegate to filter a list of numbe
 
 This example combine multiple Func delegates to create more complex operations.
 
-### 2. Using `Func` in a Higher-Order Function
+### 3. Using `Func` in a Higher-Order Function
+
+This example pass Func delegates as parameters to higher-order functions:
+
+### 4. Using `Func` for Lazy Evaluation
+
+This example uses Func delegates for lazy evaluation, where a value is computed only when it's needed.
+
+### 4. Chaining `Func` Delegates
+
+This example is chaining multiple Func delegates to create a pipeline of operations:

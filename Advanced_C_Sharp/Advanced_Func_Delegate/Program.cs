@@ -10,6 +10,12 @@
 
             CombiningMultipleFunc.SquareAndThenSquare();
 
+            FuncHigherOrderFunction.FuncAsParam();
+
+            FuncLazyEvaluation.ProcessLazy();
+
+            ChainingFuncDelegate.ProcessChaining();
+
             Console.ReadLine();
         }
     }
