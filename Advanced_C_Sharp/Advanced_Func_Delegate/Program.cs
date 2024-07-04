@@ -8,6 +8,8 @@
 
             Combining_multiple_func_delegates.AddAndThenSquare();
 
+            Combining_multiple_func_delegates.SquareAndThenSquare();
+
             Console.ReadLine();
         }
     }
