@@ -5,6 +5,9 @@
         static void Main(string[] args)
         {
             Basic_Func.GetEvenNumbers();
+
+            Combining_multiple_func_delegates.AddAndThenSquare();
+
             Console.ReadLine();
         }
     }

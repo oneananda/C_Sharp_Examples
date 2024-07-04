@@ -10,6 +10,8 @@ namespace Advanced_Func_Delegate
     {
         public static void GetEvenNumbers()
         {
+            Console.WriteLine("Basic_Func");
+
             List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             // Expects int as input and ouputs bool based on condition
