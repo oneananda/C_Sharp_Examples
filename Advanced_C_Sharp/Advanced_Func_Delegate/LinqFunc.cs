@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Advanced_Func_Delegate
 {
-    internal class Basic_Func
+    internal class LinqFunc
     {
         public static void GetEvenNumbers()
         {

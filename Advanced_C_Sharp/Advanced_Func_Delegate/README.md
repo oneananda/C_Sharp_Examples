@@ -30,3 +30,8 @@ This repository contains advanced examples of using `Func` delegates in C# to de
 
 This example demonstrates how to use a `Func` delegate to filter a list of numbers using LINQ.
 
+### 2. Combining Multiple `Func` Delegates
+
+This example combine multiple Func delegates to create more complex operations.
+
+### 2. Using `Func` in a Higher-Order Function

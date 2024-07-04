@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Basic_Func.GetEvenNumbers();
+            LinqFunc.GetEvenNumbers();
 
-            Combining_multiple_func_delegates.AddAndThenSquare();
+            CombiningMultipleFunc.AddAndThenSquare();
 
-            Combining_multiple_func_delegates.SquareAndThenSquare();
+            CombiningMultipleFunc.SquareAndThenSquare();
 
             Console.ReadLine();
         }

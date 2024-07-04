@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Advanced_Func_Delegate
 {
-    internal class Combining_multiple_func_delegates
+    internal class CombiningMultipleFunc
     {
         public static void AddAndThenSquare()
         {
