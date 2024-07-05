@@ -1,4 +1,5 @@
-// Primary_Constructors reduce the boiler plate code by allowing the construtors to be defined in the class definition itself.
+// Primary_Constructors reduce the boiler plate code by allowing 
+// the construtors to be defined in the class definition itself.
 
 public class Customer(string name, int id)
 {
