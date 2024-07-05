@@ -20,6 +20,8 @@
 
             Action_In_Dictionary.ActionMethod();
 
+            Action_Event_Handling.ActionMethod();
+
             Console.ReadLine();
         }
     }

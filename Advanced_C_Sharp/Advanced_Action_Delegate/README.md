@@ -22,7 +22,7 @@ This example demonstrates how to pass an `Action` delegate as a parameter to a m
 ### Example 6: Using `Action` in a Collection
 This example illustrates the use of `Action` delegates in a collection.
 
-### Example 7: Using `Action` for Event Handling (Yet to complete)
+### Example 7: Using `Action` for Event Handling 
 This example demonstrates using an `Action` delegate for event handling.
 
 ### Example 8: Using `Action` in a Dictionary
