@@ -19,6 +19,15 @@ namespace Advanced_Action_Delegate
             combinedAction();
         }
 
+        public static void ActionMethod2()
+        {
+            Console.WriteLine($"Using Combining_Delegates with additional combinations!");
+            Action action1 = () => Console.WriteLine("Action 1");
+            Action action2 = () => Console.WriteLine("Action 2");
 
+            // Combine delegates
+            Action combinedAction = action1 + action2 + action1 + action2;
+            combinedAction();
+        }
     }
 }
