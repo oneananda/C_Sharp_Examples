@@ -19,6 +19,12 @@ namespace Implicit_Conversions
             service.ContactCustomer(localCustomer);
             service.ContactCustomer(nationalCustomer);
             service.ContactCustomer(internationalCustomer);
+
+            /*
+            Method Overloading: Allows different methods with the same name to handle various types.
+            Implicit Conversion: The derived classes are implicitly converted to the base class Customer when needed.
+            Polymorphism: The correct method is chosen based on the type of the argument passed, demonstrating polymorphism in action.
+            */
         }
     }
 }
