@@ -20,7 +20,9 @@ Implicit conversions in C# allow certain types to be converted to other types wi
 
 **Implicit Conversion Between Numeric Types**
 
-Converting a smaller numeric type to a larger numeric type (e.g., `int` to `double`).
+- Converting a smaller numeric type to a larger numeric type (e.g., `int` to `double`).
+- Converting int to long
+- Converting from bigger memory size to smaller one (will not compile/work)
 
 ## Medium Examples
 
