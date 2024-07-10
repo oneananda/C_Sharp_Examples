@@ -44,5 +44,30 @@ namespace Explicit_Conversions
 
             Console.WriteLine(i);
         }
+
+        public static void Example5()
+        {
+            Console.WriteLine("Converting string to int:");
+
+            string s = "123";
+            int i = int.Parse(s);  // i is now 123
+                                   // or using TryParse to handle potential exceptions
+            bool success = int.TryParse(s, out int result);  // success is true and result is 123
+
+
+            Console.WriteLine(result);
+        }
+
+        public static void Example6()
+        {
+            Console.WriteLine("Converting object to a specific type:");
+
+            object obj = 123;
+            int i = (int)obj;  // i is now 123
+
+
+
+            Console.WriteLine(i);
+        }
     }
 }
