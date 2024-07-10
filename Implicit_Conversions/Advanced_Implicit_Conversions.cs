@@ -12,16 +12,18 @@ namespace Implicit_Conversions
         public static void Example1()
         {
             // Convert EUR to USD
+            Console.WriteLine("Convert EUR to USD");
             EUR euros = new EUR(100);
-            USD dollars = euros;
+            USD dollars = euros; // You can note there is no explicit assignment
             Console.WriteLine(dollars); // Output: 110 USD
         }
 
         public static void Example2()
         {
             // Convert USD to EUR
+            Console.WriteLine("Convert USD to EUR");
             USD usDollars = new USD(100);
-            EUR eurosFromDollars = usDollars;
+            EUR eurosFromDollars = usDollars;// You can note there is no explicit assignment
             Console.WriteLine(eurosFromDollars); // Output: 91 EUR
         }
     }

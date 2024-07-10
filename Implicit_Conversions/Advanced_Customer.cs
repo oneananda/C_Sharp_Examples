@@ -10,11 +10,13 @@ namespace Implicit_Conversions
     {
         public string Name { get; set; }
 
-        // This will not compile as we are mixing the 'implicit operator' with inheritence 
-        public static implicit operator Advanced_Local_Customer(Advanced_Customer customer)
-        {
-            return new Advanced_Local_Customer { Name = customer.Name };
-        }     
+        //// This will not compile as we are mixing the 'implicit operator' with inheritence 
+
+        ////Uncomment to see the compile time error
+        //public static implicit operator Advanced_Local_Customer(Advanced_Customer customer)
+        //{
+        //    return new Advanced_Local_Customer { Name = customer.Name };
+        //}     
     }
 
     class Advanced_Local_Customer : Advanced_Customer
