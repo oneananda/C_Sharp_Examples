@@ -30,7 +30,7 @@ Implicit conversions in C# allow certain types to be converted to other types wi
 
 Converting from a derived class to a base class.
 
-In the example we can see the following things:
+In the example "Medium_Implicit_Conversions.cs" we can see the following things:
 
 - Method Overloading: Allows different methods with the same name to handle various types.
 - **Implicit Conversion:** The derived classes are implicitly converted to the base class Customer when needed.
@@ -49,17 +49,17 @@ In the example we can see the following things:
 - The conversion rates are hardcoded in the example (1 EUR = 1.10 USD and 1 USD = 0.91 EUR)
 
 ```
-            // Convert EUR to USD
-            Console.WriteLine("Convert EUR to USD");
-            EUR euros = new EUR(100);
-            USD dollars = euros; // You can note there is no explicit assignment
-            Console.WriteLine(dollars); // Output: 110 USD
+// Convert EUR to USD
+Console.WriteLine("Convert EUR to USD");
+EUR euros = new EUR(100);
+USD dollars = euros; // You can note there is no explicit assignment
+Console.WriteLine(dollars); // Output: 110 USD
 ```
 
 ```
-            // Convert USD to EUR
-            Console.WriteLine("Convert USD to EUR");
-            USD usDollars = new USD(100);
-            EUR eurosFromDollars = usDollars;// You can note there is no explicit assignment
-            Console.WriteLine(eurosFromDollars); // Output: 91 EUR
+// Convert USD to EUR
+Console.WriteLine("Convert USD to EUR");
+USD usDollars = new USD(100);
+EUR eurosFromDollars = usDollars;// You can note there is no explicit assignment
+Console.WriteLine(eurosFromDollars); // Output: 91 EUR
 ```
