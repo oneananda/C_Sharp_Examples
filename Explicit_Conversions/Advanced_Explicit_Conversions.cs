@@ -78,5 +78,31 @@ namespace Explicit_Conversions
                 Console.WriteLine("Conversion to Vendor failed");
             }
         }
+        public static void Example5()
+        {
+            Person person = new Customer { Name = "Some Another Customer" };
+
+            // Using 'is' operator for type checking
+            if (person is Customer)
+            {
+                Customer customer = (Customer)person; // Safe to cast because 'person' is actually a Customer
+                customer.Purchase();
+            }
+            else
+            {
+                Console.WriteLine("person is not a Customer");
+            }
+
+            if (person is Vendor)
+            {
+                Vendor vendor = (Vendor)person; // Safe to cast because 'person' is actually a Vendor
+                vendor.Supply();
+            }
+            else
+            {
+                Console.WriteLine("person is not a Vendor");
+            }
         }
+    }
 }
+

@@ -1,6 +1,6 @@
 # Explicit Conversions in C#
 
-This repository contains examples and explanations of basic explicit conversions in C#. Explicit conversions are used when you need to convert a value from one data type to another and there’s a possibility that the conversion might not succeed or might lose information. These conversions require a cast operator.
+This repository contains examples and explanations of basic-advanced explicit conversions in C#. Explicit conversions are used when you need to convert a value from one data type to another and there’s a possibility that the conversion might not succeed or might lose information. These conversions require a cast operator.
 
 ## Overview
 
@@ -14,6 +14,11 @@ Explicit conversions in C# involve converting one data type to another using a c
 - Converting `decimal` to `int`
 - Converting `string` to `int` using `Parse` and `TryParse`
 - Converting `object` to a specific type
+- Converting Object to Specific Type: using 'as' keyword
+- Converting Object to Specific Type: using 'as' keyword - null
+- Converting Object to Specific Type: check using 'is' keyword 
+- Customer Vendor Example with 'as' keyword implementation
+- Customer Vendor Example with 'is' keyword implementation
 
 ## Usage
 

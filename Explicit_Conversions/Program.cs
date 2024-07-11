@@ -18,7 +18,7 @@
 
             Advanced_Explicit_Conversions.Example3(); // Converting Object to Specific Type: check using 'is' keyword 
 
-            Advanced_Explicit_Conversions.Example4(); // Customer Vendor Example
+            Advanced_Explicit_Conversions.Example4(); // Customer Vendor Example with 'as' keyword
 
 
             Console.ReadLine();
