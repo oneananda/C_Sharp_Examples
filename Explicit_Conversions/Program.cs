@@ -11,6 +11,12 @@
             Basic_Explicit_Conversions.Example5(); // Converting `string` to `int` using `Parse` and `TryParse`
             Basic_Explicit_Conversions.Example6(); // Converting `object` to a specific type
 
+
+            Advanced_Explicit_Conversions.Example1(); // Converting Object to Specific Type: using 'as' keyword
+
+            Advanced_Explicit_Conversions.Example2(); // Converting Object to Specific Type: using 'as' keyword - null
+
+
             Console.ReadLine();
         }
     }
