@@ -77,6 +77,8 @@ namespace Explicit_Conversions
             {
                 Console.WriteLine("Conversion to Vendor failed");
             }
+
+            Console.WriteLine($"Using the as operator, the program tries to cast person to Customer and Vendor. If the cast fails, it returns null, and the program prints a failure message.");
         }
         public static void Example5()
         {
@@ -102,6 +104,8 @@ namespace Explicit_Conversions
             {
                 Console.WriteLine("person is not a Vendor");
             }
+
+            Console.WriteLine($"Using the is operator, the program checks if person is of type Customer or Vendor. If the check is true, it safely casts and calls the respective method.");
         }
     }
 }
