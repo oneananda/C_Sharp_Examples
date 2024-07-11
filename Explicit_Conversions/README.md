@@ -1,4 +1,4 @@
-# Basic Explicit Conversions in C#
+# Explicit Conversions in C#
 
 This repository contains examples and explanations of basic explicit conversions in C#. Explicit conversions are used when you need to convert a value from one data type to another and there’s a possibility that the conversion might not succeed or might lose information. These conversions require a cast operator.
 
