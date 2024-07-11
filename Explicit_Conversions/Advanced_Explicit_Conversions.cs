@@ -50,5 +50,33 @@ namespace Explicit_Conversions
                 Console.WriteLine("Not possible to type cast");
             }
         }
-    }
+
+        public static void Example4()
+        {
+            Person person = new Customer { Name = "Some Customer" };
+
+            // Using 'as' operator for safe type conversion
+            Customer customer = person as Customer;
+
+            if (customer != null)
+            {
+                customer.Purchase(); // This will execute because 'person' is actually a Customer
+            }
+            else
+            {
+                Console.WriteLine("Conversion to Customer failed");
+            }
+
+            Vendor vendor = person as Vendor;  //   We are casting downwards - converting base class to derived, so this will fail
+
+            if (vendor != null)
+            {
+                vendor.Supply();
+            }
+            else
+            {
+                Console.WriteLine("Conversion to Vendor failed");
+            }
+        }
+        }
 }
