@@ -14,11 +14,11 @@ Explicit conversions in C# involve converting one data type to another using a c
 - Converting `decimal` to `int`
 - Converting `string` to `int` using `Parse` and `TryParse`
 - Converting `object` to a specific type
-- Converting Object to Specific Type: using 'as' keyword
-- Converting Object to Specific Type: using 'as' keyword - null
-- Converting Object to Specific Type: check using 'is' keyword 
-- Customer Vendor Example with 'as' keyword implementation
-- Customer Vendor Example with 'is' keyword implementation
+- Converting Object to Specific Type: using `as` keyword
+- Converting Object to Specific Type: using `as` keyword - null
+- Converting Object to Specific Type: check using `is` keyword 
+- Customer Vendor Example with `as` keyword implementation
+- Customer Vendor Example with `is` keyword implementation
 
 ## Usage
 
