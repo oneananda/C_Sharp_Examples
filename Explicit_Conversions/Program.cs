@@ -16,6 +16,8 @@
 
             Advanced_Explicit_Conversions.Example2(); // Converting Object to Specific Type: using 'as' keyword - null
 
+            Advanced_Explicit_Conversions.Example3(); // Converting Object to Specific Type: check using 'is' keyword 
+
 
             Console.ReadLine();
         }

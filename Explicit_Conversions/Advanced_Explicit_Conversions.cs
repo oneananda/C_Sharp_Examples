@@ -13,7 +13,7 @@ namespace Explicit_Conversions
             Console.WriteLine("Converting Object to Specific Type: using 'as' keyword");
 
             object obj = "Hello, World!";
-            string str = obj as string; // Returns null if obj is not a string
+            string str = obj as string;
             if (str != null)
             {
                 Console.WriteLine(str);
@@ -29,6 +29,25 @@ namespace Explicit_Conversions
             if (str != null)
             {
                 Console.WriteLine(str);
+            }
+            Console.WriteLine("Returns null if obj is not a string");
+        }
+
+        public static void Example3()
+        {
+            Console.WriteLine("Converting Object to Specific Type: using 'is' keyword");
+
+            object obj = 123;
+            string str = obj as string;
+
+            // Using is with casting
+            if (obj is string str2)
+            {
+                Console.WriteLine(str2);
+            }
+            else
+            {
+                Console.WriteLine("Not possible to type cast");
             }
         }
     }
