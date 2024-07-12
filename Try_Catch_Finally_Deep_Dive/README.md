@@ -141,4 +141,4 @@ Passing Value: Finally Value
 
 ### Conclusion
 
-## Understanding the nuances of the try-catch-finally block is crucial for robust exception handling in C#. This guide illustrates different scenarios and outcomes to help you grasp the intricate behaviors of these blocks.
+__Understanding the nuances of the try-catch-finally block is crucial for robust exception handling in C#. This guide illustrates different scenarios and outcomes to help you grasp the intricate behaviors of these blocks.__
