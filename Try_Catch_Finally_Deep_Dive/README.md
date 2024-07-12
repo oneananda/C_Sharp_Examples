@@ -96,7 +96,7 @@ Catch Value
 
 ### Example 3: Assigning Values in Finally Block
 
-## The main purpose of the finally block is to free up memory, but we can still assign values in the finally block.
+__The main purpose of the finally block is to free up memory, but we can still assign values in the finally block.__
 
 ```
 protected static string passingValue = "Initial Value";
