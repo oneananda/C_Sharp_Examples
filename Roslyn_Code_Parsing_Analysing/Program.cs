@@ -18,6 +18,11 @@ namespace Roslyn_Code_Parsing_Analysing
                 {
                     Console.WriteLine(""Hello, World!"");
                 }
+
+                private static void CallAnotherMethod()
+                {
+                    Console.WriteLine(""In CallAnotherMethod!"");
+                }
             }";
 
             // Parse the code into a syntax tree
@@ -32,7 +37,8 @@ namespace Roslyn_Code_Parsing_Analysing
             // Find all method declarations
             var methodDeclarations = root.DescendantNodes().OfType<MethodDeclarationSyntax>();
 
-            Console.WriteLine("\nMethod Declarations:");
+            Console.WriteLine("\nMethod Declarations:\n");
+
             foreach (var method in methodDeclarations)
             {
                 Console.WriteLine($"Method Name: {method.Identifier.Text}");

@@ -35,7 +35,7 @@ To run this example, you need:
 ## Explanation
 
 ### Sample C# Code
-A string containing a simple C# program is defined and will be used for parsing and analysis.
+A string containing a simple C# program is defined and will be used for parsing and analysis, We can get this via a file fetch also 
 
 ### Parse the Code
 The code is parsed into a `SyntaxTree` using Roslyn's `CSharpSyntaxTree.ParseText` method.
