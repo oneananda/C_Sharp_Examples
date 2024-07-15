@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslyn_Code_Parsing_Analysing", "Roslyn_Code_Parsing_Analysing.csproj", "{9A97B037-9696-4AA7-8565-D8023F50290B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A97B037-9696-4AA7-8565-D8023F50290B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A97B037-9696-4AA7-8565-D8023F50290B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A97B037-9696-4AA7-8565-D8023F50290B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A97B037-9696-4AA7-8565-D8023F50290B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24D7684B-8470-47E2-B5A7-4690D93B24C2}
+	EndGlobalSection
+EndGlobal
