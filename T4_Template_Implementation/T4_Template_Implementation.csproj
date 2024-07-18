@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="GeneratedInterfacesInsideFolder.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="GeneratedInterfacesInsideFolder.tt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="GenerateInterface.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -32,6 +40,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>GenerateInterface.tt</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 
 </Project>

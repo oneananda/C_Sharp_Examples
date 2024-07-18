@@ -1,0 +1,35 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.IO" #>
+
+<#
+    var interfaceName = "IProduct";
+    var properties = new[]
+    {
+        new { Type = "int", Name = "Id" },
+        new { Type = "string", Name = "Name" },
+        new { Type = "DateTime", Name = "CreatedDate" }
+    };
+
+    string folderPath = @"Interfaces";
+    string filePath = Path.Combine(Host.ResolvePath(folderPath), $"{interfaceName}.cs");
+
+    if (!Directory.Exists(Host.ResolvePath(folderPath)))
+    {
+        Directory.CreateDirectory(Host.ResolvePath(folderPath));
+    }
+
+    System.IO.File.WriteAllText(filePath, TransformText());
+#>
+namespace GeneratedInterfaces
+{
+    public interface <#= interfaceName #>
+    {
+<# foreach(var property in properties) { #>
+        <#= property.Type #> <#= property.Name #> { get; set; }
+<# } #>
+    }
+}
