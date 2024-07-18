@@ -52,4 +52,4 @@ In your Program.cs file, use the generated interface as needed in your applicati
 	Created Date: 7/18/2024 5:46:52 AM
 ```
 
-### In this demo, we have created a T4 template to generate a C# interface and then used that interface in a simple console application. This process demonstrates how we can automate code generation in C# projects using T4 templates.
+**In this demo, we have created a T4 template to generate a C# interface and then used that interface in a simple console application. This process demonstrates how we can automate code generation in C# projects using T4 templates.**
