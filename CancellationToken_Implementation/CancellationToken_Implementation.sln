@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationToken_Implementation", "CancellationToken_Implementation.csproj", "{9CC69929-2837-400E-9CB5-792804F62BBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CC69929-2837-400E-9CB5-792804F62BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC69929-2837-400E-9CB5-792804F62BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC69929-2837-400E-9CB5-792804F62BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC69929-2837-400E-9CB5-792804F62BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DCE13F8-2A54-4F09-979B-CC96E0CE0564}
+	EndGlobalSection
+EndGlobal
