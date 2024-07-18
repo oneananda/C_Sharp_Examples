@@ -22,8 +22,8 @@ This project demonstrates how to use T4 (Text Template Transformation Toolkit) t
    Create a new .NET console project using the .NET CLI:
 
 ```
-   dotnet new console -n T4_Template_Demo
-   cd T4_Template_Demo
+   dotnet new console -n T4_Template_Implementation
+   cd T4_Template_Implementation
 ```
 
 2. **Add the T4 Template**
@@ -46,10 +46,10 @@ In your Program.cs file, use the generated interface as needed in your applicati
 ## Output
 
 ```
-T4 Template Implementation
-Id: 1
-Name: Customer 1
-Created Date: 7/18/2024 5:46:52 AM
+	T4 Template Implementation
+	Id: 1
+	Name: Customer 1
+	Created Date: 7/18/2024 5:46:52 AM
 ```
 
-## In this demo, we have created a T4 template to generate a C# interface and then used that interface in a simple console application. This process demonstrates how we can automate code generation in C# projects using T4 templates.
+### In this demo, we have created a T4 template to generate a C# interface and then used that interface in a simple console application. This process demonstrates how we can automate code generation in C# projects using T4 templates.
