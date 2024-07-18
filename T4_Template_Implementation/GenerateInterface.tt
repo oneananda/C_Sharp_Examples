@@ -4,7 +4,7 @@
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
 <#
-    var interfaceName = "IMyInterface";
+    var interfaceName = "ICustomer";
     var properties = new[]
     {
         new { Type = "int", Name = "Id" },

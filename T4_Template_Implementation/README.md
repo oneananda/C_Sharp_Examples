@@ -42,4 +42,14 @@ Save the GenerateInterface.tt file. Visual Studio (or your code editor) will aut
 
 In your Program.cs file, use the generated interface as needed in your application.
 
+
+## Output
+
+```
+T4 Template Implementation
+Id: 1
+Name: Customer 1
+Created Date: 7/18/2024 5:46:52 AM
+```
+
 ## In this demo, we have created a T4 template to generate a C# interface and then used that interface in a simple console application. This process demonstrates how we can automate code generation in C# projects using T4 templates.
