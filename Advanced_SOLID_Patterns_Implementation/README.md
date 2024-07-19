@@ -37,7 +37,7 @@ git clone https://github.com/oneananda/Advanced_SOLID_Patterns_Implementation.gi
 cd Advanced_SOLID_Patterns_Implementation
 ```
 
-Project Structure
+### Project Structure
 
 The project is organized as follows:
 
@@ -59,8 +59,38 @@ Advanced_SOLID_Patterns_Implementation/
 │
 └── README.md
 
+## Single Responsibility Principle (SRP)
 
-License
+### Explanation
+
+The Single Responsibility Principle states that a class should have only one reason to change, meaning it should only have one job or responsibility. This principle helps to reduce the complexity of the code and makes it easier to maintain and understand.
+
+### Example
+
+In this example, we will demonstrate SRP by separating the responsibilities of a `User` class and a `UserService` class.
+
+#### Before Applying SRP
+
+```csharp
+public class Before_SRP_User
+{
+    public string Name { get; set; }
+    public string Email { get; set; }
+
+    public void Save()
+    {
+        // Code to save the user to a database
+    }
+
+    public void SendEmail()
+    {
+        // Code to send an email
+    }
+}
+```
+
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ```
