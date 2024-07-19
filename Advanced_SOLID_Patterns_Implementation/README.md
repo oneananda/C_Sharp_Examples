@@ -43,7 +43,7 @@ The project is organized as follows:
 
 Advanced_SOLID_Patterns_Implementation/
 │
-├── src/
+├── Advanced_SOLID_Patterns_Implementation/
 │   ├── SRP/
 │   ├── OCP/
 │   ├── LSP/
@@ -71,7 +71,7 @@ In this example, we will demonstrate SRP by separating the responsibilities of a
 
 #### Before Applying SRP
 
-```csharp
+```
 public class Before_SRP_User
 {
     public string Name { get; set; }
@@ -88,6 +88,41 @@ public class Before_SRP_User
     }
 }
 ```
+
+In this example, the `Before_SRP_User` class has multiple responsibilities: managing user data, saving the user to a database, and sending emails. This violates the SRP.
+
+#### After Applying SRP
+
+
+```
+internal class After_SRP_User
+{
+    public string Name { get; set; }
+    public string Email { get; set; }
+}
+```
+
+```
+internal class After_SRP_UserService
+{
+    public void Save(After_SRP_User user)
+    {
+        // Code to save the user to a database
+    }
+
+    public void SendEmail(After_SRP_User user)
+    {
+        // Code to send an email
+    }
+}
+```
+
+
+Now, the `After_SRP_User` class is only responsible for user data, and the `After_SRP_UserService` class handles the saving and emailing functionalities. This adheres to the SRP.
+
+### Detailed Example
+
+For a more detailed example, refer to the SRP Example in the SRP directory.
 
 
 ## License
