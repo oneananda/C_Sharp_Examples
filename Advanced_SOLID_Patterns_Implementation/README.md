@@ -41,6 +41,7 @@ cd Advanced_SOLID_Patterns_Implementation
 
 The project is organized as follows:
 
+```
 Advanced_SOLID_Patterns_Implementation/
 │
 ├── Advanced_SOLID_Patterns_Implementation/
@@ -50,7 +51,7 @@ Advanced_SOLID_Patterns_Implementation/
 │   ├── ISP/
 │   └── DIP/
 │
-├── tests/
+├── Advanced_SOLID_Patterns_Implementation.Tests/
 │   ├── SRP/
 │   ├── OCP/
 │   ├── LSP/
@@ -58,6 +59,7 @@ Advanced_SOLID_Patterns_Implementation/
 │   └── DIP/
 │
 └── README.md
+```
 
 ## Single Responsibility Principle (SRP)
 
