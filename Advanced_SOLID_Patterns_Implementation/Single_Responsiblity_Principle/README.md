@@ -1,16 +1,12 @@
 ﻿# Advanced SOLID Patterns Implementation - Single Responsibility Principle (SRP)
 
-Welcome to the Advanced SOLID Patterns Implementation project! This repository is dedicated to providing comprehensive examples and explanations of the SOLID principles in software design, showcasing advanced usage and implementation patterns.
+Welcome to the Advanced SOLID Patterns  Single Responsibility Principle (SRP) Implementation project! This repository is dedicated to providing comprehensive examples and explanations of the SOLID principles in software design, showcasing advanced usage and implementation patterns.
 
 ## Overview
 
 The SOLID principles are a set of design principles intended to make software designs more understandable, flexible, and maintainable. These principles are:
 
 - **S**ingle Responsibility Principle (SRP)
-- **O**pen/Closed Principle (OCP)
-- **L**iskov Substitution Principle (LSP)
-- **I**nterface Segregation Principle (ISP)
-- **D**ependency Inversion Principle (DIP)
 
 This project aims to demonstrate how these principles can be implemented in real-world scenarios using advanced patterns and techniques.
 
@@ -169,9 +165,9 @@ public class EmailService
 
 To adhere to SRP, we can separate these responsibilities into individual classes:
 
-### Detailed Example
+### Detailed Examples
 
-For a more detailed example, refer to the SRP Example in the SRP directory.
+For a more detailed examples, refer to the SRP Example in the Single_Responsiblity_Principle directory.
 
 By adhering to SRP, we achieve several benefits:
 
