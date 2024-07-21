@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single_Responsiblity_Principle", "Single_Responsiblity_Principle\Single_Responsiblity_Principle.csproj", "{547B2FA2-B9E7-4A43-8F4A-959BE75553F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced_SOLID_Patterns_Implementation.Tests", "Advanced_SOLID_Patterns_Implementation.Tests\Advanced_SOLID_Patterns_Implementation.Tests.csproj", "{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{547B2FA2-B9E7-4A43-8F4A-959BE75553F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547B2FA2-B9E7-4A43-8F4A-959BE75553F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547B2FA2-B9E7-4A43-8F4A-959BE75553F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547B2FA2-B9E7-4A43-8F4A-959BE75553F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A7FD00E-057E-4655-BFFF-03CECB6FFAE1}
+	EndGlobalSection
+EndGlobal
