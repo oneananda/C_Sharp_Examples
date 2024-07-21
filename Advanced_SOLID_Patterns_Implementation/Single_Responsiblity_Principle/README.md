@@ -4,7 +4,7 @@ Welcome to the Advanced SOLID Patterns  Single Responsibility Principle (SRP) Im
 
 ## Overview
 
-The SOLID principles are a set of design principles intended to make software designs more understandable, flexible, and maintainable. These principles are:
+The SOLID principles are a set of design principles intended to make software designs more understandable, flexible, and maintainable. 
 
 - **S**ingle Responsibility Principle (SRP)
 
