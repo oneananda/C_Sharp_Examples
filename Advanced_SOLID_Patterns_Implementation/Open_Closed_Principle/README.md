@@ -43,7 +43,6 @@ Advanced_SOLID_Patterns_Implementation/
 └── README.md
 ```
 
-
 ## Open/Closed Principle (OCP)
 
 ### Explanation
@@ -56,7 +55,9 @@ Suppose you have a payment processing system that initially only supports credit
 
 This can't be possible with the current code
 
-### Refactored for OCP
+## How to Implement OCP
+
+### Implementation steps - Refactored for OCP
 
 - Create an Interface:
 - Implement Concrete Payment Methods:
@@ -68,8 +69,6 @@ This can't be possible with the current code
 - **Promotes Reusability:** Components designed with OCP in mind are more likely to be reusable in different contexts.
 - **Facilitates Scalability:** New features can be added with minimal impact on the existing system.
 - **Supports Clean Architecture:** Encourages a modular and well-organized code structure.
-
-## How to Implement OCP
 
 ### Key Strategies
 
@@ -97,7 +96,6 @@ Adhering to OCP ensures that your codebase can grow and adapt to new requirement
 
 The Open/Closed Principle is a fundamental guideline in software design that promotes robust, maintainable, and scalable code. By ensuring that your software entities are open for extension but closed for modification, you can create systems that are easier to evolve and adapt to changing requirements.
  
-
 ### Detailed Examples
 
 For a more detailed examples, refer to the OCP Example in the Open_Closed_Principle directory.
