@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single_Responsiblity_Principle", "Single_Responsiblity_Principle\Single_Responsiblity_Principle.csproj", "{547B2FA2-B9E7-4A43-8F4A-959BE75553F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Single_Responsiblity_Principle", "Single_Responsiblity_Principle\Single_Responsiblity_Principle.csproj", "{547B2FA2-B9E7-4A43-8F4A-959BE75553F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced_SOLID_Patterns_Implementation.Tests", "Advanced_SOLID_Patterns_Implementation.Tests\Advanced_SOLID_Patterns_Implementation.Tests.csproj", "{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced_SOLID_Patterns_Implementation.Tests", "Advanced_SOLID_Patterns_Implementation.Tests\Advanced_SOLID_Patterns_Implementation.Tests.csproj", "{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Open_Closed_Principle", "Open_Closed_Principle\Open_Closed_Principle.csproj", "{D08FA4F7-4C39-4C5B-9A5A-96CEAC83820E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8A7EAC5-D6B3-4DFE-A010-8F7AE31FBA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08FA4F7-4C39-4C5B-9A5A-96CEAC83820E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08FA4F7-4C39-4C5B-9A5A-96CEAC83820E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08FA4F7-4C39-4C5B-9A5A-96CEAC83820E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08FA4F7-4C39-4C5B-9A5A-96CEAC83820E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
