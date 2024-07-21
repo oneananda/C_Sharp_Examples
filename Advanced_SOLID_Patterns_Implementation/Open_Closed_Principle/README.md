@@ -53,7 +53,10 @@ The Open/Closed Principle (OCP) which states that software entities (classes, mo
 
 Suppose you have a payment processing system that initially only supports credit card payments. Later, you want to add support for PayPal and Bitcoin payments without modifying the existing code
 
-This can't be possible with the current code
+### Example 2: Notification System
+
+Imagine a notification system that needs to support different types of notifications such as email, SMS, and push notifications. Initially, it only supports email notifications.
+
 
 ## How to Implement OCP
 

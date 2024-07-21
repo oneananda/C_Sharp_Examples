@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Open_Closed_Principle.Scenario1.Before_OCP
+namespace Open_Closed_Principle.Scenario_Payment_Methods.Before_OCP
 {
     public class Before_OCP_PaymentProcessor
     {

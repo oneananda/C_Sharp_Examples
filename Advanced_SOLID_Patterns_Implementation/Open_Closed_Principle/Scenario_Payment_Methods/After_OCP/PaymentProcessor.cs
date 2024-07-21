@@ -1,11 +1,11 @@
-﻿using Open_Closed_Principle.Scenario1.After_OCP.Interfaces;
+﻿using Open_Closed_Principle.Scenario_Payment_Methods.After_OCP.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Open_Closed_Principle.Scenario1.After_OCP
+namespace Open_Closed_Principle.Scenario_Payment_Methods.After_OCP
 {
     public class PaymentProcessor
     {
