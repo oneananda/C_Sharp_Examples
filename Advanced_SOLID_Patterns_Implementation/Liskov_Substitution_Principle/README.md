@@ -46,6 +46,19 @@ By following LSP, developers can create more robust and maintainable software. I
 - **Enhanced Flexibility**: Easier to extend and modify the system.
 - **Greater Reliability**: Reduces the risk of bugs and unexpected behavior.
 
+
+### Example: Financial Transactions
+
+Let's create a financial transaction system where different types of accounts (e.g., savings, checking) must handle transactions. We'll ensure that our design adheres to LSP.
+
+- Step 1: Define the Base Class and Subclasses
+We'll start with a base class Account and then create subclasses SavingsAccount and CheckingAccount.
+- Step 2: Create a Transaction Processor
+We'll create a transaction processor that works with any type of account, demonstrating the use of LSP.
+- Step 3: Demonstrate Usage
+We'll now demonstrate how this works with different account types.
+	
+
 ## Conclusion
 
 The Liskov Substitution Principle is a fundamental concept in object-oriented design that ensures subclasses can be used interchangeably with their superclasses without causing issues. Adhering to LSP leads to more maintainable, reusable, and flexible code. Understanding and applying this principle is essential for creating robust and scalable software systems.
