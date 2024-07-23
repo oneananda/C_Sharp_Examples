@@ -57,7 +57,19 @@ We'll start with a base class Account and then create subclasses SavingsAccount 
 We'll create a transaction processor that works with any type of account, demonstrating the use of LSP.
 - Step 3: Demonstrate Usage
 We'll now demonstrate how this works with different account types.
-	
+
+
+#### Explanation
+
+- Base Class (Account): The Account class defines the common interface for all types of accounts.
+- Subclasses (SavingsAccount and CheckingAccount): Each subclass implements the base class methods, adhering to specific rules (e.g., minimum balance for savings, no overdraft for checking).
+- Transaction Processor: The TransactionProcessor class works with the base class type Account, demonstrating that it can handle any account type without knowing the specific details, thus adhering to LSP.
+
+#### Key Points
+
+- The TransactionProcessor works with the Account type and can process transactions for both SavingsAccount and CheckingAccount seamlessly.
+- Each subclass correctly overrides the base class methods without altering the expected behavior.
+- By following LSP, we ensure that the system is extendable and maintains the correct behavior even when new account types are introduced.
 
 ## Conclusion
 
