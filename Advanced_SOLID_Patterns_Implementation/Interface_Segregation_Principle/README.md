@@ -58,6 +58,8 @@ The project is organized into the following sections:
 - **After Refactoring:** Examples that adhere to ISP by splitting larger interfaces into smaller, more specific ones.
 - **Use Cases:** Various real-world scenarios where ISP can be applied, such as plugin systems, e-commerce payment processing, and more.
 
+ISP states that no client should be forced to depend on methods it does not use. In other words, larger interfaces should be split into smaller, more specific ones so that clients only need to know about the methods that are of interest to them.
+
 For detailed examples and implementation guidelines, refer to the relevant directories and documentation within this repository.
 
 ## License
