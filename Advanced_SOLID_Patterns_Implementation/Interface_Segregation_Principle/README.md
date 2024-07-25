@@ -62,6 +62,27 @@ ISP states that no client should be forced to depend on methods it does not use.
 
 For detailed examples and implementation guidelines, refer to the relevant directories and documentation within this repository.
 
+
+### Scenario_Plugin_System
+
+We have an interface `Before_ISP_IPlugin` which contains the following methods,
+
+```
+void Initialize();
+void LoadData();
+void SaveData();
+void Render();
+void Log(string message);
+```
+
+When implementing this to `DataPlugin`, 
+
+- This plugin does not need to render
+- This plugin does not need to log
+
+Both the implementations are not at all required, which is violating ISP
+
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
