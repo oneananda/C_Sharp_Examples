@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interface_Segregation_Principle.Scenario_Plugin_System.Before_ISP
 {
-    internal class Before_ISP_DataPlugin
+    internal class Before_ISP_DataPlugin : Before_ISP_IPlugin
     {
         public void Initialize()
         {
