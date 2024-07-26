@@ -88,6 +88,16 @@ When implementing this to `DataPlugin`,
 
 Both the implementations are not at all required, which is violating ISP
 
+### Before Refactoring
+
+Fat Interface: The IPlugin interface includes methods for initialization, data handling, rendering, and logging.
+Implementation Issues: Each plugin class (DataPlugin, RenderPlugin) must implement all methods of the IPlugin interface, even if they are not relevant. This results in methods like Render and Log throwing NotImplementedException in DataPlugin, and LoadData and SaveData throwing NotImplementedException in RenderPlugin.
+
+### After Refactoring
+
+Segregated Interfaces: The IPlugin interface is now split into multiple specific interfaces (IDataPlugin, IRenderPlugin, ILogPlugin).
+Implementation Benefits: Each plugin class (DataPlugin, RenderPlugin, LogPlugin) only implements the methods relevant to its functionality. This adheres to the Interface Segregation Principle, resulting in cleaner and more maintainable code without unnecessary methods.
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
