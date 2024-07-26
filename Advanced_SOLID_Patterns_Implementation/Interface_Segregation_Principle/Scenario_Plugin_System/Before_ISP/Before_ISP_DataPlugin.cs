@@ -10,29 +10,36 @@ namespace Interface_Segregation_Principle.Scenario_Plugin_System.Before_ISP
     {
         public void Initialize()
         {
+            Console.WriteLine("Initializing the plugin...");
             // Initialization logic
+            Console.WriteLine("Plugin initialization complete.");
         }
 
         public void LoadData()
         {
+            Console.WriteLine("Loading data...");
             // Load data logic
+            Console.WriteLine("Data loading complete.");
         }
 
         public void SaveData()
         {
+            Console.WriteLine("Saving data...");
             // Save data logic
+            Console.WriteLine("Data saving complete.");
         }
 
         public void Render()
         {
-            // This plugin does not need to render
+            Console.WriteLine("This plugin does not need to render.");
             throw new NotImplementedException();
         }
 
         public void Log(string message)
         {
-            // This plugin does not need to log
+            Console.WriteLine("This plugin does not need to log.");
             throw new NotImplementedException();
         }
+
     }
 }
