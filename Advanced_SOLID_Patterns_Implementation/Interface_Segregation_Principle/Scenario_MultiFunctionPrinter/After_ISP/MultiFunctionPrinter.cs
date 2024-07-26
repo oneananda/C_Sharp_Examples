@@ -11,22 +11,22 @@ namespace Interface_Segregation_Principle.Scenario_MultiFunctionPrinter.After_IS
     {
         void IFax.Fax(Document document)
         {
-            //throw new NotImplementedException();
+            Console.WriteLine($"Faxing document: {document.Name}");
         }
 
         void IPrinter.Print(Document document)
         {
-            //throw new NotImplementedException();
+            Console.WriteLine($"Printing document: {document.Name}");
         }
 
         void IStapler.Staple(Document document)
         {
-            //throw new NotImplementedException();
+            Console.WriteLine($"Stapling document: {document.Name}");
         }
 
         void IScanner.Scan(Document document)
         {
-            //throw new NotImplementedException();
+            Console.WriteLine($"Scanning document: {document.Name}");
         }
     }
 }
