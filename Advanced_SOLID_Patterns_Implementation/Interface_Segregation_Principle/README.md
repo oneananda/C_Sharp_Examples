@@ -62,8 +62,14 @@ ISP states that no client should be forced to depend on methods it does not use.
 
 For detailed examples and implementation guidelines, refer to the relevant directories and documentation within this repository.
 
+### Scenario : MultiFunctionDevice and Basic Printer
 
-### Scenario_Plugin_System
+- **Interfaces**: Define specific methods for each functionality (Fax, Print, Staple, Scan).
+- **MultiFunctionDevice**: Implements all four interfaces, providing comprehensive functionality.
+- **BasicPrinter**: Implements only the `IPrinter` interface, focusing on printing.
+
+
+### Scenario : Plugin System
 
 We have an interface `Before_ISP_IPlugin` which contains the following methods,
 
