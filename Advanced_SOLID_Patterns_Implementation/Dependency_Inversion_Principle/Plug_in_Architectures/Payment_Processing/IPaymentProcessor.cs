@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dependency_Inversion_Principle.Plug_in_Architectures.Payment_Processing
 {
-    internal interface IPaymentProcessor
+    public interface IPaymentProcessor
     {
         void ProcessPayment(decimal amount);
     }

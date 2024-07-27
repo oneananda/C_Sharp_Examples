@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dependency_Inversion_Principle.Plug_in_Architectures.Payment_Processing
 {
-    internal class PaymentProcessor 
+    public class PaymentProcessor 
     {
        
     }
