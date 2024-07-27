@@ -64,14 +64,25 @@ By adhering to DIP, we achieve several benefits:
 Scenario 1: Plug-in Architectures
 In a plug-in architecture, high-level modules define the behavior through interfaces or abstract classes, and low-level modules implement these behaviors as plug-ins. This allows adding new functionality without changing the high-level module.
 
-Scenario 2: Dependency Injection
+Scenario 2: Log Framework
+
+The Dependency Inversion Principle states that high-level modules (like LoggingService) should not depend on low-level modules (like FileLogger, DatabaseLogger, and CloudLogger). Instead, both should depend on abstractions (ILogger).
+
+High-Level Module: LoggingService - It uses the ILogger interface to log messages.
+Low-Level Modules: FileLogger, DatabaseLogger, CloudLogger - They implement the ILogger interface to provide specific logging mechanisms.
+Abstraction: ILogger interface - It defines the Log method that all logging implementations must provide.
+Details: The specific implementations of the ILogger interface provided by FileLogger, DatabaseLogger, and CloudLogger.
+
+Scenario 3: Dependency Injection
 Using Dependency Injection (DI) frameworks helps to adhere to DIP by managing the dependencies between modules. The DI container injects the required dependencies into the high-level modules, promoting loose coupling.
 
-Scenario 3: Inversion of Control (IoC)
+Scenario 4: Inversion of Control (IoC)
 In an IoC container, the control of object creation and dependency management is inverted from the application to the container. High-level modules define the dependencies, and the container provides the required implementations, adhering to DIP.
 
-Scenario 4: Service Layer
+Scenario 5: Service Layer
 In a layered architecture, the service layer can define the business logic through interfaces, and the data access layer provides the implementation. This separation ensures that the business logic does not depend on the data access details.
+
+
 
 ### Practical Considerations
 

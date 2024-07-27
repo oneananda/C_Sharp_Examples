@@ -14,9 +14,4 @@ namespace Dependency_Inversion_Principle.Logging_Framework
             Console.WriteLine($"Logging to file: {message}");
         }
     }
-
-
-
-
-
 }
