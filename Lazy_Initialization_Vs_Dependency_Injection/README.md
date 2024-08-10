@@ -2,6 +2,8 @@
 
 ## Introduction
 
+In software designing one can easily get deceived with the two concepts as one, Lazy Initialization and Dependency Injection
+
 Here we are going to see the key differences between Lazy Initialization and Dependency Injection which may sound similiar, but infact not, both the SW design concepts are distinct by nature, we will see this with examples
 
 ## Lazy Initialization
