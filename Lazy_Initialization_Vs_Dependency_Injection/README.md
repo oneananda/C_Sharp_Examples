@@ -43,7 +43,7 @@ DI is commonly implemented using an IoC (Inversion of Control) container, which 
 
 **Flexibility**: If you want to change the ingredients or add new ones (like changing a service), you do so in one place (the restaurant), and it automatically affects all meals (components) that need those ingredients.
 
-## Use Case for Dependency Injection (DI)
+### Use Case for Dependency Injection (DI)
 
 Scenario: You have an application with multiple components that depend on various services, such as a logging service, database access, and configuration management.
 
@@ -53,7 +53,20 @@ Use Case: DI helps in injecting these dependencies into your components, making 
 
 Imagine you have a book that you only want to read if you have free time. Instead of carrying it around all day, you keep it on the shelf and only take it out when you decide to read it. This is like Lazy Initialization in programming.
 
-## Use Cases for Lazy Initialization
+
+### How Lazy Initialization Works: 
+
+Without Lazy Initialization: The book (object or resource) is taken out and put on the table as soon as you start your day, even if you might not use it.
+
+With Lazy Initialization: The book stays on the shelf until you actually decide to read it. This saves you from carrying it around unnecessarily.
+
+### Why Use Lazy Initialization?
+
+Saves Resources: If creating the book (object) is expensive or time-consuming, you only do it when needed, saving time and resources.
+
+Improves Performance: You avoid the overhead of setting up something that might not be used right away.
+
+### Use Cases for Lazy Initialization
 
 Scenario: You have a service or object that is costly to create (e.g., due to heavy computation, large memory usage, or network calls).
 
