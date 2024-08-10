@@ -35,6 +35,12 @@ DI is commonly implemented using an IoC (Inversion of Control) container, which 
 - **Ingredients**: Dependencies (services)
 - **Customer’s Order**: Request for a service
 
+### Why Use DI?
+
+**Efficiency**: The restaurant handles all the ingredient logistics, allowing the chef to focus on cooking. Similarly, DI handles the creation and management of dependencies, allowing your code to focus on its main tasks.
+
+**Flexibility**: If you want to change the ingredients or add new ones (like changing a service), you do so in one place (the restaurant), and it automatically affects all meals (components) that need those ingredients.
+
 ## Use Case for Dependency Injection (DI)
 
 Scenario: You have an application with multiple components that depend on various services, such as a logging service, database access, and configuration management.
