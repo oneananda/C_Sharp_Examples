@@ -71,3 +71,10 @@ Improves Performance: You avoid the overhead of setting up something that might 
 Scenario: You have a service or object that is costly to create (e.g., due to heavy computation, large memory usage, or network calls).
 
 Use Case: Use Lazy Initialization to defer the creation of this object until it is actually needed, thus avoiding the overhead of creating it upfront if it may not be used.
+
+
+## Q & A
+
+Imagine you have a complex service that takes a long time to initialize. Would it be better to register this service as Singleton and use Lazy Initialization, or should it be registered as Transient? What are the trade-offs?
+
+For a complex service that takes a long time to initialize, registering it as a Singleton and using Lazy Initialization is often a better approach. This setup ensures that the service is created only once, improving performance by avoiding repeated expensive initializations. Lazy Initialization delays the creation until the service is actually needed, which optimizes resource usage. On the other hand, registering the service as Transient means a new instance is created every time it is requested, which can be inefficient for complex services. The trade-off with Singleton and Lazy Initialization is that while you save on initialization time, you must manage potential issues related to long-lived instances, such as resource management and state consistency.
