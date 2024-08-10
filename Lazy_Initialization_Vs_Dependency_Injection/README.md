@@ -24,16 +24,16 @@ DI is commonly implemented using an IoC (Inversion of Control) container, which 
 
 ## DI Analogy
 
-Imagine you are running a restaurant, you tasked the chef to prepare the meal as well as bring ingredients from store whenever any order comes up, this is without DI,
+- Imagine you are running a restaurant, you tasked the chef to prepare the meal as well as bring ingredients from store whenever any order comes up, this is without DI,
 
-Now with DI, you asked the chef to do only to prepare the meal, and provide the ingredients whevener needed by restaurant or other person (here we call it DI container)
+- Now with DI, you asked the chef to do only to prepare the meal, and provide the ingredients whevener needed by restaurant or other person (here we call it DI container)
 
-In this analogy:
+`In this analogy`
 
-Restaurant: DI container
-Chef: Your application or service
-Ingredients: Dependencies (services)
-Customer’s Order: Request for a service
+- **Restaurant**: DI container
+- **Chef**: Your application or service
+- **Ingredients**: Dependencies (services)
+- **Customer’s Order**: Request for a service
 
 ## Use Case for Dependency Injection (DI)
 
