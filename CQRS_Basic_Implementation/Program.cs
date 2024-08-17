@@ -24,6 +24,7 @@ namespace CQRS_Basic_Implementation
             var getAllProductsQuery = new GetAllProductsQuery();
             var getAllProducts = productQueryHandler.Handle(getAllProductsQuery);
 
+            Console.WriteLine($"Fetching all the products!");
             foreach (var product in getAllProducts)
             {
                 Console.WriteLine($"Id : {product.Id}, Name : {product.Name}, Price : {product.Price} ");

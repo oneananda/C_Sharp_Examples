@@ -6,17 +6,22 @@ This repository contains a simple example of implementing the Command Query Resp
 
 **Commands/:** Contains commands related to Product.
 
-AddProductCommand.cs: Command to add a product.
+- AddProductCommand.cs: Command to add a product.
 
 (Coming soon)
+
 UpdateProductCommand.cs: Command to update a product.
+
 DeleteProductCommand.cs: Command to delete a product.
+
 ProductCommandHandler.cs: Handles all product-related commands.
 
 **Queries/:** Contains queries related to Product.
 
 GetProductQuery.cs: Query to get a specific product.
+
 GetAllProductsQuery.cs: Query to get all products.
+
 ProductQueryHandler.cs: Handles all product-related queries.
 
 **Models/:**
