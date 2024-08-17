@@ -1,4 +1,5 @@
 ﻿using CQRS_Basic_Implementation.Commands.Products;
+using CQRS_Basic_Implementation.Models;
 using CQRS_Basic_Implementation.Queries.Products;
 using CQRS_Basic_Implementation.Repositories;
 
@@ -14,21 +15,31 @@ namespace CQRS_Basic_Implementation
             var productCommandHandler = new ProductCommandHandler(productRepository);
 
             // Adding random products
-            for (int productId = 1; productId < 20; productId++)
+            for (int productId = 1; productId <= 5; productId++)
             {
                 var addProductCommand = new AddProductCommand(productId, GetRandomProduct(), GetRandomPrice());
                 productCommandHandler.Handle(addProductCommand);
             }
 
             var productQueryHandler = new ProductQueryHandler(productRepository);
+
             var getAllProductsQuery = new GetAllProductsQuery();
             var getAllProducts = productQueryHandler.Handle(getAllProductsQuery);
 
             Console.WriteLine($"Fetching all the products!");
+            Console.WriteLine(string.Empty);
             foreach (var product in getAllProducts)
             {
                 Console.WriteLine($"Id : {product.Id}, Name : {product.Name}, Price : {product.Price} ");
             }
+
+            Console.WriteLine(string.Empty);
+            Console.WriteLine($"Fetching only one product with id 3!");
+            Console.WriteLine(string.Empty);
+            var getProductQuery = new GetProductQuery(3);
+            var singleProduct = productQueryHandler.Handle(getProductQuery);
+            Console.WriteLine($"Id : {singleProduct.Id}, Name : {singleProduct.Name}, Price : {singleProduct.Price} ");
+            Console.WriteLine(string.Empty);
 
             Console.ReadLine();
         }
