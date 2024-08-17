@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CQRS_Basic_Implementation.Commands
+namespace CQRS_Basic_Implementation.Commands.Products
 {
     public class ProductCommandHandler
     {
