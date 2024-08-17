@@ -17,9 +17,14 @@ namespace CQRS_Basic_Implementation.Queries.Products
             _productRepository = productRepository;
         }
 
-        public Product GetProduct(GetProductQuery query)
+        public Product Handle(GetProductQuery query)
         {
             return _productRepository.Get(query.Id);
+        }
+
+        public IEnumerable<Product> Handle(GetAllProductsQuery query)
+        {
+            return _productRepository.GetAll();
         }
     }
 }

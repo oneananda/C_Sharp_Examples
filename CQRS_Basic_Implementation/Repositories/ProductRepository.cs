@@ -20,5 +20,10 @@ namespace CQRS_Basic_Implementation.Repositories
         {
             return _products.FirstOrDefault(p => p.Id == id);
         }
+
+        public List<Product> GetAll()
+        {
+            return _products;
+        }
     }
 }
