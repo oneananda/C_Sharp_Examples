@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CQRS_Basic_Implementation.Commands.Products
 {
-    internal class UpdateProductCommand
+    public class UpdateProductCommand
     {
         public int Id { get; set; }
         public string Name { get; set; }

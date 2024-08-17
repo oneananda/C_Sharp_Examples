@@ -26,5 +26,15 @@ namespace CQRS_Basic_Implementation.Commands.Products
             };
             _productRepository.Add(product);
         }
+
+        public void Handle(UpdateProductCommand command)
+        {
+            var product = _productRepository.Get(command.Id);
+            if (product != null)
+            {
+                product.Name = command.Name;
+                product.Price = command.Price;
+            }
+        }
     }
 }

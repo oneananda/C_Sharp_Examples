@@ -25,5 +25,9 @@ namespace CQRS_Basic_Implementation.Repositories
         {
             return _products;
         }
+        public Product Update(Product product)
+        {
+
+        }
     }
 }
