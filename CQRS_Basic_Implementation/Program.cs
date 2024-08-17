@@ -24,7 +24,10 @@ namespace CQRS_Basic_Implementation
             FetchAllProducts(productRepository);
 
             // Fetching only one product with id 3
-            FetchSingleProduct(productRepository, 3);            
+            FetchSingleProduct(productRepository, 3);
+
+            // Fetching only one product with id 4
+            FetchSingleProduct(productRepository, 4);
 
             Console.ReadLine();
         }
@@ -36,7 +39,7 @@ namespace CQRS_Basic_Implementation
             Console.WriteLine(string.Empty);
             Console.WriteLine($"Fetching only one product with id {productId}!");
             Console.WriteLine(string.Empty);
-            var getProductQuery = new GetProductQuery(3);
+            var getProductQuery = new GetProductQuery(productId);
             var singleProduct = productQueryHandler.Handle(getProductQuery);
             Console.WriteLine($"Id : {singleProduct.Id}, Name : {singleProduct.Name}, Price : {singleProduct.Price} ");
             Console.WriteLine(string.Empty);
