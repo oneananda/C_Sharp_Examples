@@ -90,7 +90,46 @@ namespace ref_Deep_Dive
             Console.WriteLine(string.Empty);
             #endregion
 
+            #region Example 7: With and without Using ref - Performance considerations
+            Console.WriteLine($"Example 7: With and without Using ref - Performance considerations");
+
+            LargeStruct largeStruct = new LargeStruct(1000000);
+            Console.WriteLine("Starting Without ref...");
+
+            for (int i = 0; i < 1000; i++)
+            {
+                ProcessLargeStruct(largeStruct);
+            }
+
+            Console.WriteLine("Finished Without ref.");
+
+            Console.WriteLine($"Each time ProcessLargeStruct is called, a full copy of largeStruct is made. If the struct is large (e.g., contains a large array), this copying process can be slow and memory-intensive.");
+
+            Console.WriteLine(string.Empty);
+
+
+
+
+
+            #endregion
+
+
             Console.ReadLine();
+        }
+
+        static void ProcessLargeStruct(LargeStruct ls)
+        {
+            // Processing large struct...
+            ls.Data[0] = 42; // Modify just to simulate some processing
+        }
+
+        public struct LargeStruct
+        {
+            public int[] Data;
+            public LargeStruct(int size)
+            {
+                Data = new int[size];
+            }
         }
 
         private static void ProcessLstStr(List<string> lstStr)
