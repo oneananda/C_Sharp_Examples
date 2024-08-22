@@ -82,6 +82,33 @@ We will see how this is happening!
         }
 ```
 
+## Example 3: Demonstrating String Behavior
+
+```
+            // Create a new Person object and set its Name property.
+            Person person = new Person { Name = "Alice" };
+            Console.WriteLine($"Before: {person.Name}");
+
+            // Pass the person object by reference.
+            ModifyPerson(ref person);
+
+            // The reference to person has been changed inside the method.
+            Console.WriteLine($"After: {person.Name}");
+
+```
+
+
+
+
+```
+        // Method that takes a Person object by reference.
+        static void ModifyPerson(ref Person p)
+        {
+            // Create a new Person object and assign it to the parameter.
+            p = new Person { Name = "Bob" };
+        }
+```
+
 
 ### Key Points
 

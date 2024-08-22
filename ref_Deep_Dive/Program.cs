@@ -46,7 +46,24 @@ namespace ref_Deep_Dive
             Console.WriteLine($"After: {person.Name}");
             #endregion
 
+            string text = "Hello";
+            Console.WriteLine($"Before: {text}");
+
+            // Pass the string by reference.
+            ModifyString(ref text);
+
+            // The string reference should point to the new string value.
+            Console.WriteLine($"After: {text}");
+
+
+
             Console.ReadLine();
+        }
+
+        static void ModifyString(ref string s)
+        {
+            // Reassign the reference to a new string instance.
+            s = "World";
         }
 
         // Method that takes a Person object by reference.
