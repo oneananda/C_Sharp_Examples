@@ -12,6 +12,7 @@ namespace ref_Deep_Dive
         static void Main(string[] args)
         {
             #region Example 1: Basic implementation of 'ref'
+            Console.WriteLine($"Example 1: Basic implementation of 'ref'");
             // Basic implementation of 'ref'
             int num = 10;
             Console.WriteLine($"Before method call: {num}");
@@ -26,6 +27,7 @@ namespace ref_Deep_Dive
             #endregion
 
             #region Example 2: Multiple 'ref' implementation
+            Console.WriteLine($"Example 2: Multiple 'ref' implementation");
             int result1 = 0, result2 = 0;
 
             CalculateValues(5, 3, ref result1, ref result2);
@@ -35,6 +37,7 @@ namespace ref_Deep_Dive
             #endregion
 
             #region Example 3: Handling Reference Types
+            Console.WriteLine($"Example 3: Handling Reference Types");
             // Create a new Person object and set its Name property.
             Person person = new Person { Name = "Alice" };
             Console.WriteLine($"Before: {person.Name}");
@@ -48,7 +51,7 @@ namespace ref_Deep_Dive
 
 
             #region Example 4: Using ref in Recursive Methods
-
+            Console.WriteLine($"Example 4: Using ref in Recursive Methods");
             string text = "Hello";
             Console.WriteLine($"Before: {text}");
 
@@ -61,7 +64,7 @@ namespace ref_Deep_Dive
             #endregion
 
             #region Example 5: Using ref in Recursive Methods
-
+            Console.WriteLine($"Example 5: Using ref in Recursive Methods");
             int number = 1;
             Console.WriteLine($"Original Number: {number}");
 
@@ -72,8 +75,8 @@ namespace ref_Deep_Dive
             #endregion
 
 
-            #region Example 6: WithoutuUsing ref but achive th same functionality 
-
+            #region Example 6: Without Using ref but achive th same functionality 
+            Console.WriteLine($"Example 6: Without Using ref but achive th same functionality ");
             List<string> LstStr = new List<string>();
             LstStr.Add("Adding string 1");
             Console.WriteLine($"Original Count: {LstStr.Count}");
