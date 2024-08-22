@@ -81,3 +81,12 @@ We will see how this is happening!
             p = new Person { Name = "Bob" };
         }
 ```
+
+
+### Key Points
+
+**Parameter Initialization:** The parameter passed to a method with ref must be initialized before being passed to the method. If not initialized, the compiler will throw an error.
+
+**Consistent Usage:** You must use the ref keyword both in the method definition and when calling the method. Omitting ref in either place will result in a compilation error.
+
+**Reference Semantics:** Using ref allows you to modify the value of the argument in the caller's scope, which is different from passing parameters by value, where the method works with a copy of the argument.
