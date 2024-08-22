@@ -109,6 +109,28 @@ We will see how this is happening!
         }
 ```
 
+### Example 4: Using ref in Recursive Methods
+
+```
+            string text = "Hello";
+            Console.WriteLine($"Before: {text}");
+
+            // Pass the string by reference.
+            ModifyString(ref text);
+
+            // The string reference should point to the new string value.
+            Console.WriteLine($"After: {text}");
+```
+
+
+```
+        static void ModifyString(ref string s)
+        {
+            // Reassign the reference to a new string instance.
+            s = "World";
+        }
+```
+
 
 ### Key Points
 
