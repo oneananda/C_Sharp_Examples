@@ -46,6 +46,9 @@ namespace ref_Deep_Dive
             Console.WriteLine($"After: {person.Name}");
             #endregion
 
+
+            #region Example 4: Using ref in Recursive Methods
+
             string text = "Hello";
             Console.WriteLine($"Before: {text}");
 
@@ -55,7 +58,18 @@ namespace ref_Deep_Dive
             // The string reference should point to the new string value.
             Console.WriteLine($"After: {text}");
 
+            #endregion
 
+            #region Example 5: Using ref in Recursive Methods
+
+            int number = 1;
+            Console.WriteLine($"Original Number: {number}");
+
+            IncrementRef(ref number, 5);
+
+            Console.WriteLine($"Incremented Number: {number}");
+
+            #endregion
 
             Console.ReadLine();
         }
@@ -64,6 +78,15 @@ namespace ref_Deep_Dive
         {
             // Reassign the reference to a new string instance.
             s = "World";
+        }
+
+        static void IncrementRef(ref int num, int limit)
+        {
+            if (num < limit)
+            {
+                num++;
+                IncrementRef(ref num, limit);
+            }
         }
 
         // Method that takes a Person object by reference.
