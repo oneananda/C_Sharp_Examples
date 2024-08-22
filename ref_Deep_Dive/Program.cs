@@ -24,6 +24,7 @@ namespace ref_Deep_Dive
             // Output
             // Before method call: 10
             // After method call: 20
+            Console.WriteLine(string.Empty);
             #endregion
 
             #region Example 2: Multiple 'ref' implementation
@@ -34,6 +35,7 @@ namespace ref_Deep_Dive
 
             Console.WriteLine($"Sum: {result1}, Difference: {result2}");
 
+            Console.WriteLine(string.Empty);
             #endregion
 
             #region Example 3: Handling Reference Types
@@ -47,6 +49,7 @@ namespace ref_Deep_Dive
 
             // The reference to person has been changed inside the method.
             Console.WriteLine($"After: {person.Name}");
+            Console.WriteLine(string.Empty);
             #endregion
 
 
@@ -60,7 +63,7 @@ namespace ref_Deep_Dive
 
             // The string reference should point to the new string value.
             Console.WriteLine($"After: {text}");
-
+            Console.WriteLine(string.Empty);
             #endregion
 
             #region Example 5: Using ref in Recursive Methods
@@ -71,7 +74,7 @@ namespace ref_Deep_Dive
             IncrementRef(ref number, 5);
 
             Console.WriteLine($"Incremented Number: {number}");
-
+            Console.WriteLine(string.Empty);
             #endregion
 
 
@@ -84,7 +87,7 @@ namespace ref_Deep_Dive
             ProcessLstStr(LstStr);
 
             Console.WriteLine($"Current Count: {LstStr.Count}");
-
+            Console.WriteLine(string.Empty);
             #endregion
 
             Console.ReadLine();
