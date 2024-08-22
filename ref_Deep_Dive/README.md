@@ -49,10 +49,29 @@ We will see how this is happening!
 ```
 
 
+## Example 3: Handling Reference Types
+
 ```
-        static void CalculateValues(int a, int b, ref int sum, ref int difference)
+            // Create a new Person object and set its Name property.
+            Person person = new Person { Name = "Alice" };
+            Console.WriteLine($"Before: {person.Name}");
+
+            // Pass the person object by reference.
+            ModifyPerson(ref person);
+
+            // The reference to person has been changed inside the method.
+            Console.WriteLine($"After: {person.Name}");
+
+```
+
+
+
+
+```
+        // Method that takes a Person object by reference.
+        static void ModifyPerson(ref Person p)
         {
-            sum = a + b;
-            difference = a - b;
+            // Create a new Person object and assign it to the parameter.
+            p = new Person { Name = "Bob" };
         }
 ```
