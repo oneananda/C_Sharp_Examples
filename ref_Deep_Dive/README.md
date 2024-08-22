@@ -188,7 +188,7 @@ We will see how this is happening!
 
 ### Example 7: With and without Using ref - Performance considerations
 
-Without ref
+**Without ref**
 
 ```
             LargeStruct largeStruct = new LargeStruct(1000000);
@@ -212,7 +212,12 @@ Without ref
         }
 ```
 
-With ref
+**Performance Considerations:**
+
+- **Copying:** Each time `ProcessLargeStruct` is called, a `full copy of largeStruct is made`. If the struct is large (e.g., contains a large array), this copying process can be `slow and memory-intensive`.
+- **Complexity:** The overhead increases with the size of the struct and the number of times the method is called, as more time and memory are required to create and manage the copies.
+
+**With ref**
 
 ```
             LargeStruct largeStruct = new LargeStruct(1000000);
@@ -235,6 +240,19 @@ With ref
             ls.Data[0] = 42; // Modify just to simulate some processing
         }
 ```
+
+**Performance Considerations:**
+
+- No Copying: By passing the struct with ref, no copying occurs. The method operates directly on the original struct, significantly reducing the time and memory overhead.
+- Direct Access: Since the struct is passed by reference, any modifications made within the method are applied directly to the original struct, which can be more efficient.
+
+**Performance Comparison Summary**
+
+__Memory Usage & Execution Time:__
+
+- **Without ref:** Memory usage and Execution Time increases due to the creation of multiple copies of the large struct.
+- **With ref:** Memory usage and Execution Time are reduced as no copies are made; the method operates directly on the original struct.
+
 
 ### Key Points
 
