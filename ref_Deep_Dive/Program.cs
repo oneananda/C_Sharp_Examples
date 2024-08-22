@@ -78,8 +78,8 @@ namespace ref_Deep_Dive
             #endregion
 
 
-            #region Example 6: Without Using ref but achive th same functionality 
-            Console.WriteLine($"Example 6: Without Using ref but achive th same functionality ");
+            #region Example 6: Without Using ref but achive the same functionality 
+            Console.WriteLine($"Example 6: Without Using ref but achive the same functionality ");
             List<string> LstStr = new List<string>();
             LstStr.Add("Adding string 1");
             Console.WriteLine($"Original Count: {LstStr.Count}");

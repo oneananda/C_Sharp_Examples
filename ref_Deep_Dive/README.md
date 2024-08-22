@@ -131,8 +131,30 @@ We will see how this is happening!
         }
 ```
 
+**Important point to be noted:** Even though by natural the `string` is reference type, it will not hold the values across methods as it is immutable, that means everytime you are assining a new value it will start referring to a new reference pointer.
+
 
 ### Example 5: Using ref in Recursive Methods
+
+```
+            int number = 1;
+            Console.WriteLine($"Original Number: {number}");
+
+            IncrementRef(ref number, 5);
+
+            Console.WriteLine($"Incremented Number: {number}");
+```
+
+```
+            static void IncrementRef(ref int num, int limit)
+            {
+                if (num < limit)
+                {
+                    num++;
+                    IncrementRef(ref num, limit);
+                }
+            }
+```
 
 
 
