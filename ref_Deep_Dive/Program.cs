@@ -1,7 +1,12 @@
-﻿using System.Diagnostics.Metrics;
+﻿using System;
+using System.Diagnostics.Metrics;
 
 namespace ref_Deep_Dive
 {
+    public class Person
+    {
+        public string Name { get; set; }
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -29,7 +34,26 @@ namespace ref_Deep_Dive
 
             #endregion
 
+            #region Example 3: Handling Reference Types
+            // Create a new Person object and set its Name property.
+            Person person = new Person { Name = "Alice" };
+            Console.WriteLine($"Before: {person.Name}");
+
+            // Pass the person object by reference.
+            ModifyPerson(ref person);
+
+            // The reference to person has been changed inside the method.
+            Console.WriteLine($"After: {person.Name}");
+            #endregion
+
             Console.ReadLine();
+        }
+
+        // Method that takes a Person object by reference.
+        static void ModifyPerson(ref Person p)
+        {
+            // Create a new Person object and assign it to the parameter.
+            p = new Person { Name = "Bob" };
         }
 
         static void CalculateValues(int a, int b, ref int sum, ref int difference)
