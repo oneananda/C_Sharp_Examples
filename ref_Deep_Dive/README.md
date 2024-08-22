@@ -11,10 +11,6 @@ We will see how this is happening!
 ## Example 1: Basic implementation of 'ref'
 
 ```
-        static void Main(string[] args)
-        {
-            #region Example 1: Basic implementation of 'ref'
-            // Basic implementation of 'ref'
             int num = 10;
             Console.WriteLine($"Before method call: {num}");
 
@@ -25,13 +21,12 @@ We will see how this is happening!
             // Output
             // Before method call: 10
             // After method call: 20
-            #endregion
-
-
-
-            Console.ReadLine();
         }
+```
 
+**Calling method**
+
+```
         static void ModifyValue(ref int x)
         {
             x = x * 2;
