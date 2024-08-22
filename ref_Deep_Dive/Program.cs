@@ -71,13 +71,26 @@ namespace ref_Deep_Dive
 
             #endregion
 
+
+            #region Example 6: WithoutuUsing ref but achive th same functionality 
+
+            List<string> LstStr = new List<string>();
+            LstStr.Add("Adding string 1");
+            Console.WriteLine($"Original Count: {LstStr.Count}");
+
+            ProcessLstStr(LstStr);
+
+            Console.WriteLine($"Current Count: {LstStr.Count}");
+
+            #endregion
+
             Console.ReadLine();
         }
 
-        static void ModifyString(ref string s)
+        private static void ProcessLstStr(List<string> lstStr)
         {
-            // Reassign the reference to a new string instance.
-            s = "World";
+            lstStr.Add("Adding new string");
+            lstStr.Add("Adding another new string");
         }
 
         static void IncrementRef(ref int num, int limit)
@@ -87,6 +100,12 @@ namespace ref_Deep_Dive
                 num++;
                 IncrementRef(ref num, limit);
             }
+        }
+
+        static void ModifyString(ref string s)
+        {
+            // Reassign the reference to a new string instance.
+            s = "World";
         }
 
         // Method that takes a Person object by reference.
