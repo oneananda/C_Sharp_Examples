@@ -95,6 +95,7 @@ namespace ref_Deep_Dive
 
         private static void ProcessLstStr(List<string> lstStr)
         {
+            // Adding values, but not returning
             lstStr.Add("Adding new string");
             lstStr.Add("Adding another new string");
         }

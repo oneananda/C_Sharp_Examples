@@ -156,7 +156,26 @@ We will see how this is happening!
             }
 ```
 
+### Example 6: Without Using ref but achive the same functionality 
 
+```
+            List<string> LstStr = new List<string>();
+            LstStr.Add("Adding string 1");
+            Console.WriteLine($"Original Count: {LstStr.Count}");
+
+            ProcessLstStr(LstStr);
+
+            Console.WriteLine($"Current Count: {LstStr.Count}");
+```
+
+```
+            private static void ProcessLstStr(List<string> lstStr)
+            {
+                // Adding values, but not returning
+                lstStr.Add("Adding new string");
+                lstStr.Add("Adding another new string");
+            }
+```
 
 
 ### Key Points
