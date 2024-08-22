@@ -1,9 +1,14 @@
-﻿using System.Diagnostics.Metrics;
+# 'ref' Deep dive
 
-namespace ref_Deep_Dive
-{
-    internal class Program
-    {
+This project demonstrates how to use `ref` keyword with different aspects,
+
+'ref' is indicating that the parameter is passed by reference rather than value, that means, any changes made to the parameter will be made available outside of the method.
+
+We will see how this is happening!
+
+## Example 1: Basic implementation of 'ref'
+
+```
         static void Main(string[] args)
         {
             #region Example 1: Basic implementation of 'ref'
@@ -29,5 +34,4 @@ namespace ref_Deep_Dive
         {
             x = x * 2;
         }
-    }
-}
+```
