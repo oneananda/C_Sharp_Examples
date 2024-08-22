@@ -45,9 +45,15 @@ We will see how this is happening!
             CalculateValues(5, 3, ref result1, ref result2);
 
             Console.WriteLine($"Sum: {result1}, Difference: {result2}");
-
 ```
 
+```
+            static void CalculateValues(int a, int b, ref int sum, ref int difference)
+            {
+                sum = a + b;
+                difference = a - b;
+            }
+```
 
 ## Example 3: Handling Reference Types
 
