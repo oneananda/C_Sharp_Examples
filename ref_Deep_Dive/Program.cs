@@ -103,18 +103,31 @@ namespace ref_Deep_Dive
 
             Console.WriteLine("Finished Without ref.");
 
-            Console.WriteLine($"Each time ProcessLargeStruct is called, a full copy of largeStruct is made. If the struct is large (e.g., contains a large array), this copying process can be slow and memory-intensive.");
+            Console.WriteLine($"Each time ProcessLargeStruct (without ref) is called, a full copy of largeStruct is made. If the struct is large (e.g., contains a large array), this copying process can be slow and memory-intensive.");
 
             Console.WriteLine(string.Empty);
 
+            Console.WriteLine("Starting With ref...");
 
+            for (int i = 0; i < 1000; i++)
+            {
+                ProcessLargeStruct(ref largeStruct);
+            }
 
+            Console.WriteLine("Finished With ref.");
 
+            Console.WriteLine(string.Empty);
 
             #endregion
 
 
             Console.ReadLine();
+        }
+
+        static void ProcessLargeStruct(ref LargeStruct ls)
+        {
+            // Processing large struct...
+            ls.Data[0] = 42; // Modify just to simulate some processing
         }
 
         static void ProcessLargeStruct(LargeStruct ls)
