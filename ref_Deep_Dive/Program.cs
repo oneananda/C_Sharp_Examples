@@ -120,7 +120,6 @@ namespace ref_Deep_Dive
 
             #endregion
 
-
             Console.ReadLine();
         }
 

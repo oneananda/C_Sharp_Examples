@@ -49,6 +49,8 @@ We will see how this is happening!
             Console.WriteLine($"Sum: {result1}, Difference: {result2}");
 ```
 
+**Calling method**
+
 ```
             static void CalculateValues(int a, int b, ref int sum, ref int difference)
             {
@@ -72,7 +74,7 @@ We will see how this is happening!
 
 ```
 
-
+**Calling method**
 
 
 ```
@@ -99,7 +101,7 @@ We will see how this is happening!
 
 ```
 
-
+**Calling method**
 
 
 ```
@@ -124,6 +126,7 @@ We will see how this is happening!
             Console.WriteLine($"After: {text}");
 ```
 
+**Calling method**
 
 ```
         static void ModifyString(ref string s)
@@ -146,6 +149,8 @@ We will see how this is happening!
 
             Console.WriteLine($"Incremented Number: {number}");
 ```
+
+**Calling method**
 
 ```
             static void IncrementRef(ref int num, int limit)
@@ -170,6 +175,8 @@ We will see how this is happening!
             Console.WriteLine($"Current Count: {LstStr.Count}");
 ```
 
+**Calling method**
+
 ```
             private static void ProcessLstStr(List<string> lstStr)
             {
@@ -179,6 +186,55 @@ We will see how this is happening!
             }
 ```
 
+### Example 7: With and without Using ref - Performance considerations
+
+Without ref
+
+```
+            LargeStruct largeStruct = new LargeStruct(1000000);
+            Console.WriteLine("Starting Without ref...");
+
+            for (int i = 0; i < 1000; i++)
+            {
+                ProcessLargeStruct(largeStruct);
+            }
+
+            Console.WriteLine("Finished Without ref.");
+```
+
+**Calling method**
+
+```
+        static void ProcessLargeStruct(LargeStruct ls)
+        {
+            // Processing large struct...
+            ls.Data[0] = 42; // Modify just to simulate some processing
+        }
+```
+
+With ref
+
+```
+            LargeStruct largeStruct = new LargeStruct(1000000);
+            Console.WriteLine("Starting With ref...");
+
+            for (int i = 0; i < 1000; i++)
+            {
+                ProcessLargeStruct(ref largeStruct);
+            }
+
+            Console.WriteLine("Finished With ref.");
+```
+
+**Calling method**
+
+```
+        static void ProcessLargeStruct(ref LargeStruct ls)
+        {
+            // Processing large struct...
+            ls.Data[0] = 42; // Modify just to simulate some processing
+        }
+```
 
 ### Key Points
 
@@ -186,4 +242,4 @@ We will see how this is happening!
 
 **Consistent Usage:** You must use the ref keyword both in the method definition and when calling the method. Omitting ref in either place will result in a compilation error.
 
-**Reference Semantics:** Using ref allows you to modify the value of the argument in the caller's scope, which is different from passing parameters by value, where the method works with a copy of the argument.
+**Reference:** Using ref allows you to modify the value of the argument in the caller's scope, which is different from passing parameters by value, where the method works with a copy of the argument.
