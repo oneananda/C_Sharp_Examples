@@ -4,6 +4,8 @@ This project demonstrates how to use `ref` keyword with different aspects,
 
 In C# using 'ref' keyword is indicating that the parameter is passed by reference rather than value, that means, any changes made to the parameter will be made available outside of the method.
 
+The other purpose of using ref is, we can return multiple parameters from a method, this might be very useful in cases where we need multiple values to be evaluated in the caller function.
+
 We will see how this is happening!
 
 ## Example 1: Basic implementation of 'ref'
