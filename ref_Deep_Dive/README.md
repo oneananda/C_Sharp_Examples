@@ -2,7 +2,7 @@
 
 This project demonstrates how to use `ref` keyword with different aspects,
 
-'ref' is indicating that the parameter is passed by reference rather than value, that means, any changes made to the parameter will be made available outside of the method.
+In C# using 'ref' keyword is indicating that the parameter is passed by reference rather than value, that means, any changes made to the parameter will be made available outside of the method.
 
 We will see how this is happening!
 
