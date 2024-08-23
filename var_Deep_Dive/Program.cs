@@ -44,6 +44,50 @@
 
             #endregion
 
+            #region Complex Object Initializations
+
+            Console.WriteLine($"Complex Object Initializations");
+
+            var customer = new Dictionary<string, Dictionary<string, double>>();
+
+            var orderItems = new Dictionary<string, double>();
+
+            orderItems.Add("Laptop", 27272.33);
+            orderItems.Add("Monitor", 78771.52);
+
+            customer.Add("Cust 1", orderItems);
+            customer.Add("Cust 2", orderItems);
+
+            // var is used to iterate also
+            foreach (var item in customer)
+            {
+                foreach (var item2 in item.Value)
+                {
+                    Console.WriteLine(item.Key + " " + item2.Key + " " + item2.Value);
+                }
+            }
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
+            #region LINQ Queries
+
+            Console.WriteLine($"LINQ Queries");
+
+            var numbers = new[] { 1, 2, 3, 4, 5 };
+            var evenNumbers = numbers.Where(n => n % 2 == 0);
+            // evenNumbers is of type IEnumerable<int>.
+
+            foreach (var currentNumber in evenNumbers)
+            {
+                Console.WriteLine(currentNumber);  // Output: 2, 4
+            }
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
             Console.ReadLine(); // To hold the screen
         }
     }
