@@ -15,3 +15,7 @@ Welcome to the **var Deep Dive** project! This project demonstrates various usag
 - [Running the Project](#running-the-project)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Introduction
+
+The `var` keyword in C# is a powerful tool that allows developers to declare local variables without explicitly specifying the type. This project explores how `var` can be used in different scenarios, such as working with anonymous types, LINQ queries, and complex object initializations.
