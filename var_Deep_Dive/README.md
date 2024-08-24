@@ -39,3 +39,12 @@ This example demonstrates how `var` can be used to implicitly type variables bas
 
 When dealing with complex objects, `var` can simplify the code by eliminating redundant type declarations.
 
+### Example 4: LINQ Queries
+
+`var` is commonly used in LINQ queries to handle the result sets, which can be complex types like `IEnumerable<T>`.
+
+### Example 5: Reducing Redundancy
+
+Using `var` helps reduce redundancy in code, making it more concise and easier to read.
+
+
