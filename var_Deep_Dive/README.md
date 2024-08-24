@@ -75,7 +75,12 @@ Using `var` helps reduce redundancy in code, making it more concise and easier t
 
 ### Dynamic Typing vs. var
 
-var is statically typed --> infers the type at compile time
-dynamic is infered at runtime
+`var` is statically typed --> infers the type at compile time
+`dynamic` is infered at runtime
 
-var and dynamic can cause error if mishanlded
+`var and dynamic` can cause error if mishanlded
+
+###  Scoping Rules
+
+The scope of a variable declared with var is limited to the local context, such as within methods, loops, or local functions. It cannot be declared as a global or class-level field or property.
+
