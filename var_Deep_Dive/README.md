@@ -31,4 +31,11 @@ The `var` keyword in C# is a powerful tool that allows developers to declare loc
 
 This example demonstrates how `var` can be used to implicitly type variables based on the assigned value.
 
+### Example 2: Anonymous Types
+
+`var` is essential when working with anonymous types, as you cannot explicitly name the type.
+
+### Example 3: Complex Object Initializations
+
+When dealing with complex objects, `var` can simplify the code by eliminating redundant type declarations.
 
