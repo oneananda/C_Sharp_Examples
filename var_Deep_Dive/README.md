@@ -109,3 +109,14 @@ There are scenarios where explicit typing might be preferred over `var` for clar
 
 We can utilize use of `var`, balancing between code readability and reduced redundancy.
 
+Explicit Typing:
+
+```
+int number = 42;
+```
+
+Implicit Typing with var:
+
+```
+var number = 42;  // Compiler infers the type as int
+```
