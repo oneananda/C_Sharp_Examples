@@ -70,3 +70,12 @@ Using `var` helps reduce redundancy in code, making it more concise and easier t
 ### Example 11: Inference Only Works with Single Expressions
 
 - **Description:** The type inference provided by `var` only works with single expressions. Complex expressions that result in multiple possible types will cause a compile-time error.
+
+## Key points in using var
+
+### Dynamic Typing vs. var
+
+var is statically typed --> infers the type at compile time
+dynamic is infered at runtime
+
+var and dynamic can cause error if mishanlded
