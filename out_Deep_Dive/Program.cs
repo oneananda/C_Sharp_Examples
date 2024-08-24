@@ -35,6 +35,36 @@
             #endregion
 
 
+            #region Example 3: Using out with TryParse
+
+            Console.WriteLine($"Example 3: Using out with TryParse");
+
+            Console.WriteLine($"Passing a integer value to parse - string input = \"123\"");
+            string input = "123";
+            if (int.TryParse(input, out int result))
+            {
+                Console.WriteLine($"Parsing successful: {result}");
+            }
+            else
+            {
+                Console.WriteLine("Parsing failed.");
+            }
+            Console.WriteLine(string.Empty);
+
+            Console.WriteLine($"Passing a non integer value to parse - string input = \"123A\"");
+            input = "123A";
+            if (int.TryParse(input, out result))
+            {
+                Console.WriteLine($"Parsing successful: {result}");
+            }
+            else
+            {
+                Console.WriteLine("Parsing failed.");
+            }
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
             Console.ReadLine(); // To hold the screen
         }
         static void Divide(int dividend, int divisor, out int quotient, out int remainder)
