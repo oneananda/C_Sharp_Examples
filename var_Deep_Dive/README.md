@@ -103,4 +103,9 @@ The scope of a variable declared with `var` is limited to the local context, suc
 
 Even though `var` infers types, `var` doesn't weaken type safety, it maintains type safety.
 
+### Explicit vs. Implicit Typing
+
+There are scenarios where explicit typing might be preferred over `var` for clarity, such as when working in a large team or when the type is not immediately obvious from the context.
+
+We can utilize use of `var`, balancing between code readability and reduced redundancy.
 
