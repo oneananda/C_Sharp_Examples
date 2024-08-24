@@ -144,7 +144,25 @@ namespace var_Deep_Dive
 
             #endregion
 
+            #region Example 8: Rules & Restrictions of var - Type Cannot Change
+
+            Console.WriteLine($"Example 8: Rules & Restrictions of var - Type Cannot Change");
+
+            /*
+             
+            var myVariable = "Hello";  // Treated as string
+
+            myVariable = 123;          // This will cause a compile-time error
             
+            */
+            Console.WriteLine($"You cannot assign a value of a different type (e.g., assigning an int to a variable inferred as a string)");
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
+
+
 
             Console.ReadLine(); // To hold the screen
         }
