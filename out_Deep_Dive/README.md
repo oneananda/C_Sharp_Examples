@@ -18,4 +18,30 @@ The primary objective of this project is to showcase how the `out` keyword can b
 - Parsing strings using `TryParse` with `out`.
 - Assigning values within methods using the `out` keyword.
 
+## Examples
+
+The project covers the following examples:
+
+1. **Basic Example with `out` Parameter**  
+   - Demonstrates how the `out` keyword can be used to return a value from a method.
+
+```
+            int x, y;
+            
+            y = Multiply(out x);
+
+            Console.WriteLine($"x = {x}, y = {y}");
+```
+
+**Out Method**
+
+```
+        static int Multiply(out int a)
+        {
+            // The a needs to be assigned before the control leaves the method
+            // if not, the compiler error will happen
+            a = 10; 
+            return a * a;
+        } 
+```
 
