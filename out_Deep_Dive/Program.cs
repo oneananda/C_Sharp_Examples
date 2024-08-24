@@ -10,7 +10,7 @@
 
             int x, y;
             
-            GetNumbers(out x, out y);
+            y = Multiply(out x);
 
             Console.WriteLine($"x = {x}, y = {y}");
 
@@ -18,15 +18,36 @@
 
             #endregion
 
+            #region Example 2: Using out for Multiple Return Values
+
+            Console.WriteLine($"Example 2: Using out for Multiple Return Values");
+
+            int dividend = 17, divisor = 3;
+            int quotient, remainder;
+
+            Divide(dividend, divisor, out quotient, out remainder);
+
+            Console.WriteLine($"Quotient: {quotient}, Remainder: {remainder}");
+
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
+
             Console.ReadLine(); // To hold the screen
         }
-
-        static void GetNumbers(out int a, out int b)
+        static void Divide(int dividend, int divisor, out int quotient, out int remainder)
         {
-            // The a and b needs to be assigned before the control leaves the method
+            quotient = dividend / divisor;
+            remainder = dividend % divisor;
+        }
+        static int Multiply(out int a)
+        {
+            // The a needs to be assigned before the control leaves the method
             // if not, the compiler error will happen
             a = 10; 
-            b = 20;
+            return a * a;
         }
     }
 }
