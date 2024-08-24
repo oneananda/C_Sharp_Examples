@@ -1,4 +1,7 @@
-﻿namespace var_Deep_Dive
+﻿using System;
+using System.Text;
+
+namespace var_Deep_Dive
 {
     public class Program
     {
@@ -87,6 +90,26 @@
             Console.WriteLine(string.Empty);
 
             #endregion
+
+
+            #region Reducing Redundancy
+
+            Console.WriteLine($"Reducing Redundancy");
+
+            var sb = new StringBuilder();
+            // Instead of StringBuilder sb = new StringBuilder();
+
+            sb.Append("Hello");
+            sb.Append(" World!");
+
+            Console.WriteLine($"Use var instead of StringBuilder sb = new StringBuilder();");
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
+
+
 
             Console.ReadLine(); // To hold the screen
         }
