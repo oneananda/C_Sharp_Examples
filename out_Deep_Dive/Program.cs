@@ -29,7 +29,6 @@
 
             Console.WriteLine($"Quotient: {quotient}, Remainder: {remainder}");
 
-
             Console.WriteLine(string.Empty);
 
             #endregion

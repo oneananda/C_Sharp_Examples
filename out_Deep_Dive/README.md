@@ -25,6 +25,8 @@ The project covers the following examples:
 1. **Basic Example with `out` Parameter**  
    - Demonstrates how the `out` keyword can be used to return a value from a method.
 
+**Calling method**
+
 ```
             int x, y;
             
@@ -45,3 +47,93 @@ The project covers the following examples:
         } 
 ```
 
+2. **Using `out` for Multiple Return Values**  
+   - Illustrates how to use the `out` keyword to return multiple values from a method, such as quotient and remainder from a division operation.
+
+**Calling method**
+ 
+```
+            int dividend = 17, divisor = 3;
+            int quotient, remainder;
+
+            Divide(dividend, divisor, out quotient, out remainder);
+
+            Console.WriteLine($"Quotient: {quotient}, Remainder: {remainder}");
+```
+
+**Out Method**
+
+```
+        static void Divide(int dividend, int divisor, out int quotient, out int remainder)
+        {
+            quotient = dividend / divisor;
+            remainder = dividend % divisor;
+        }
+```
+
+3. **Using `out` with `TryParse`**  
+   - Shows how `out` is commonly used with the `TryParse` method to convert strings to numeric types safely.
+
+**Calling method**
+ 
+```
+            string input = "123";
+
+            if (int.TryParse(input, out int result))
+            {
+                Console.WriteLine($"Parsing successful: {result}");
+            }
+            else
+            {
+                Console.WriteLine("Parsing failed.");
+            }
+            Console.WriteLine(string.Empty);
+
+           
+            input = "123A";
+
+            if (int.TryParse(input, out result))
+            {
+                Console.WriteLine($"Parsing successful: {result}");
+            }
+            else
+            {
+                Console.WriteLine("Parsing failed.");
+            }
+```
+
+ 
+4. **Method Overloading with `out`**  
+   - Explores how method overloading works when methods differ by their `out` parameters, and how it can be used to provide multiple functionalities.
+
+**Calling method**
+ 
+```
+            int overloadResult;
+
+            DoSomething(5, out overloadResult); // Calls the first method
+            Console.WriteLine(overloadResult);   // Output: 10
+
+            DoSomething(5, 3, out overloadResult); // Calls the second method
+            Console.WriteLine(overloadResult);     // Output: 8
+```
+
+**Out Method**
+
+```
+        static void DoSomething(int a, out int b)
+        {
+            b = a * 2;
+        }
+        static void DoSomething(int a, int c, out int b)
+        {
+            b = a + c;
+        }
+```
+
+## Key Takeaways
+
+- **Mandatory Assignment:** The `out` parameter must be assigned a value within the method before the method returns. If not, the compiler will generate an error.
+- **Difference from `ref`:** Unlike `ref`, `out` parameters do not need to be initialized before passing them to a method, but they must be initialized within the method.
+- **Multiple Return Values:** `out` is an excellent way to return multiple values from a method without using complex data structures.
+- **Overloading Flexibility:** Method overloading with `out` parameters allows for flexible method signatures and multiple implementations.
