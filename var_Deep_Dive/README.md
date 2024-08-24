@@ -80,7 +80,27 @@ Using `var` helps reduce redundancy in code, making it more concise and easier t
 
 `var and dynamic` can cause error if mishanlded
 
+var (Statically Typed):
+
+```
+var myVar = "Hello";  // Compiler infers string type
+myVar = 123;          // Compile-time error: Cannot convert int to string
+```
+
+dynamic (Dynamically Typed):
+
+```
+dynamic myDynamic = "Hello";
+myDynamic = 123;      // No compile-time error; type changes at runtime
+
+```
+
 ###  Scoping Rules
 
-The scope of a variable declared with var is limited to the local context, such as within methods, loops, or local functions. It cannot be declared as a global or class-level field or property.
+The scope of a variable declared with `var` is limited to the local context, such as within methods, loops, or local functions. It cannot be declared as a global or class-level field or property.
+
+### Type Safety
+
+Even though `var` infers types, `var` doesn't weaken type safety, it maintains type safety.
+
 
