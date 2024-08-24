@@ -130,3 +130,14 @@ var number = 42;  // Compiler infers the type as int
 ```
 var result = await SomeAsyncMethod();  // `result` type inferred from method return type
 ```
+
+### Limitations with Array Initializations
+
+Array Initialization:
+
+```
+var numbers = new int[] { 1, 2, 3 };  // `var` works fine with arrays
+
+// Multi-dimensional array:
+var matrix = new int[2, 2];  // `var` works but with explicit size declaration
+```
