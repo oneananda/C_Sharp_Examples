@@ -38,6 +38,7 @@
             #region Example 3: Using out with TryParse
 
             Console.WriteLine($"Example 3: Using out with TryParse");
+            Console.WriteLine(string.Empty);
 
             Console.WriteLine($"Passing a integer value to parse - string input = \"123\"");
             string input = "123";
