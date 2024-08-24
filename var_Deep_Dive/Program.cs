@@ -191,8 +191,26 @@ namespace var_Deep_Dive
             var myNullable = null;  // This will cause a compile-time error
             
             */
+
             Console.WriteLine($"var myNullable = null;  // This will cause a compile-time error");
             Console.WriteLine($"Cannot be Used with Nullable Types Directly");
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
+            #region Example 11: Rules & Restrictions of var - Inference Only Works with Single Expressions
+
+            Console.WriteLine($"Example 11: Rules & Restrictions of var - Inference Only Works with Single Expressions");
+
+            /*
+             
+            var complexType = (true ? "yes" : 1);  // This will cause a compile-time error
+            
+            */
+
+            Console.WriteLine($"var complexType = (true ? \"yes\" : 1);  // This will cause a compile-time error\r\n");
+            Console.WriteLine($"The above code is problematic because the compiler cannot infer a single type from this expression.");
 
             Console.WriteLine(string.Empty);
 
