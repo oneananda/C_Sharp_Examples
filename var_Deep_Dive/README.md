@@ -73,6 +73,10 @@ Using `var` helps reduce redundancy in code, making it more concise and easier t
 
 ## Key points in using var
 
+### Must be Initialized: 
+
+var requires an initial value at the time of declaration so that the compiler can infer the type.
+
 ### Dynamic Typing vs. var
 
 `var` is statically typed --> infers the type at compile time
