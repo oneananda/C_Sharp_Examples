@@ -47,4 +47,26 @@ When dealing with complex objects, `var` can simplify the code by eliminating re
 
 Using `var` helps reduce redundancy in code, making it more concise and easier to read.
 
+### Example 6: Working with Collections
 
+`var` can be used when iterating over collections, especially when the type of elements is complex or when the exact type is not necessary to specify.
+
+### Example 7: Initialization is Mandatory
+
+- **Description:** When using `var`, the variable must be initialized at the time of declaration. The compiler requires an initial value to determine the type of the variable.
+
+### Example 8: Type Cannot Change
+
+- **Description:** Once a variable is declared using `var`, its type is fixed and cannot change. You cannot assign a value of a different type to this variable later in the code.
+
+### Example 9: Cannot be Used as a Field Type
+
+- **Description:** The `var` keyword cannot be used for class-level fields or properties. It is restricted to local variables inside methods, loops, or LINQ queries.
+
+### Example 10: Cannot be Used with Nullable Types Directly
+
+- **Description:** Directly initializing a `var` variable with `null` will cause a compile-time error because the compiler cannot infer the type. Special care must be taken when working with nullable types.
+
+### Example 11: Inference Only Works with Single Expressions
+
+- **Description:** The type inference provided by `var` only works with single expressions. Complex expressions that result in multiple possible types will cause a compile-time error.
