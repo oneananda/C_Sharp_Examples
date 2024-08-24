@@ -120,3 +120,9 @@ Implicit Typing with var:
 ```
 var number = 42;  // Compiler infers the type as int
 ```
+
+### Use with Async/Await
+
+```
+var result = await SomeAsyncMethod();  // `result` type inferred from method return type
+```
