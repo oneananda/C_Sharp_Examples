@@ -189,11 +189,21 @@ namespace var_Deep_Dive
             /*
              
             var myNullable = null;  // This will cause a compile-time error
+
+            // This is possible
+            int? nullableInt = 12;
+            var nullableVar = nullableInt;
             
             */
 
+
             Console.WriteLine($"var myNullable = null;  // This will cause a compile-time error");
             Console.WriteLine($"Cannot be Used with Nullable Types Directly");
+
+            Console.WriteLine($"// This is possible");
+            Console.WriteLine(@"int ? nullableInt = 12;
+            var nullableVar = nullableInt;
+            ");
 
             Console.WriteLine(string.Empty);
 
