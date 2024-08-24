@@ -162,6 +162,21 @@ namespace var_Deep_Dive
             #endregion
 
 
+            #region Example 9: Rules & Restrictions of var - Cannot be Used as a Field Type
+
+            Console.WriteLine($"Example 9: Rules & Restrictions of var - Cannot be Used as a Field Type");
+
+            /*
+             
+            private var myField;  // This will cause a compile-time error
+            // The above code will not compile because var cannot be used as a field.
+            
+            */
+            Console.WriteLine($"var cannot be Used as a Field Type");
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
 
 
             Console.ReadLine(); // To hold the screen
