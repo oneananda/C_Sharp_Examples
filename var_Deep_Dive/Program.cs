@@ -102,14 +102,27 @@ namespace var_Deep_Dive
             sb.Append("Hello");
             sb.Append(" World!");
 
-            Console.WriteLine($"Use var instead of StringBuilder sb = new StringBuilder();");
+            Console.WriteLine($"Use var instead of StringBuilder sb = new StringBuilder() to Reducing Redundancy");
 
             Console.WriteLine(string.Empty);
 
             #endregion
 
 
+            #region Working with Collections
 
+            Console.WriteLine($"Working with Collections");
+
+            var list = new List<string> { "apple", "banana", "cherry" };
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);  // Output: apple, banana, cherry
+            }
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
 
             Console.ReadLine(); // To hold the screen
         }
