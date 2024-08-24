@@ -8,3 +8,14 @@ The other purpose of using out is, we can return multiple parameters from a meth
 
 We will see how this is happening!
 
+
+## Purpose
+
+The primary objective of this project is to showcase how the `out` keyword can be utilized in different programming scenarios. This includes:
+
+- Returning multiple values from a method.
+- Handling method overloading with `out` parameters.
+- Parsing strings using `TryParse` with `out`.
+- Assigning values within methods using the `out` keyword.
+
+

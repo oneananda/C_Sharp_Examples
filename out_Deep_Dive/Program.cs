@@ -34,7 +34,6 @@
 
             #endregion
 
-
             #region Example 3: Using out with TryParse
 
             Console.WriteLine($"Example 3: Using out with TryParse");
@@ -64,9 +63,9 @@
 
             #endregion
 
-            #region Example 3: Method Overloading with out
+            #region Example 4: Method Overloading with out
 
-            Console.WriteLine($"Example 3: Method Overloading with out");
+            Console.WriteLine($"Example 4: Method Overloading with out");
 
             int overloadResult;
 
