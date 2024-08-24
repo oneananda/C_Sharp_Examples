@@ -124,6 +124,28 @@ namespace var_Deep_Dive
 
             #endregion
 
+
+            #region Example 7: Rules & Restrictions of var - Initialization is Mandatory
+
+            Console.WriteLine($"Example 7: Rules & Restrictions of var - Initialization is Mandatory");
+
+            /*
+             
+            var myString;  // This will cause a compile-time error
+            
+            myString = "Hello";
+            
+            */
+            Console.WriteLine($"var myString;  // This will cause a compile-time error");
+
+            Console.WriteLine($"var requires an initial value to determine the type.");
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
+            
+
             Console.ReadLine(); // To hold the screen
         }
     }
