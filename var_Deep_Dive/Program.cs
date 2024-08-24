@@ -7,9 +7,9 @@ namespace var_Deep_Dive
     {
         static void Main(string[] args)
         {
-            #region Implicit Typing for Local Variables
+            #region Example 1: Implicit Typing for Local Variables
 
-            Console.WriteLine($"Implicit Typing for Local Variables");
+            Console.WriteLine($"Example 1: Implicit Typing for Local Variables");
 
             var message = "Hello, World!";
             // The compiler takes that message is of type string.
@@ -31,9 +31,9 @@ namespace var_Deep_Dive
             #endregion
 
 
-            #region Anonymous Types
+            #region Example 2: Anonymous Types
 
-            Console.WriteLine($"Anonymous Types");
+            Console.WriteLine($"Example 2: Anonymous Types");
 
             // var is essential when working with anonymous types, as you cannot explicitly name the type.
 
@@ -47,9 +47,9 @@ namespace var_Deep_Dive
 
             #endregion
 
-            #region Complex Object Initializations
+            #region Example 3: Complex Object Initializations
 
-            Console.WriteLine($"Complex Object Initializations");
+            Console.WriteLine($"Example 3: Complex Object Initializations");
 
             var customer = new Dictionary<string, Dictionary<string, double>>();
 
@@ -74,9 +74,9 @@ namespace var_Deep_Dive
 
             #endregion
 
-            #region LINQ Queries
+            #region Example 4: LINQ Queries
 
-            Console.WriteLine($"LINQ Queries");
+            Console.WriteLine($"Example 4: LINQ Queries");
 
             var numbers = new[] { 1, 2, 3, 4, 5 };
             var evenNumbers = numbers.Where(n => n % 2 == 0);
@@ -92,9 +92,9 @@ namespace var_Deep_Dive
             #endregion
 
 
-            #region Reducing Redundancy
+            #region Example 5: Reducing Redundancy
 
-            Console.WriteLine($"Reducing Redundancy");
+            Console.WriteLine($"Example 5: Reducing Redundancy");
 
             var sb = new StringBuilder();
             // Instead of StringBuilder sb = new StringBuilder();
@@ -109,9 +109,9 @@ namespace var_Deep_Dive
             #endregion
 
 
-            #region Working with Collections
+            #region Example 6: Working with Collections
 
-            Console.WriteLine($"Working with Collections");
+            Console.WriteLine($"Example 6: Working with Collections");
 
             var list = new List<string> { "apple", "banana", "cherry" };
 
