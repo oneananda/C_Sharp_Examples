@@ -38,8 +38,6 @@
             #region Example 3: Using out with TryParse
 
             Console.WriteLine($"Example 3: Using out with TryParse");
-            Console.WriteLine(string.Empty);
-
             Console.WriteLine($"Passing a integer value to parse - string input = \"123\"");
             string input = "123";
             if (int.TryParse(input, out int result))
@@ -66,7 +64,30 @@
 
             #endregion
 
+            #region Example 3: Method Overloading with out
+
+            Console.WriteLine($"Example 3: Method Overloading with out");
+
+            int overloadResult;
+
+            DoSomething(5, out overloadResult); // Calls the first method
+            Console.WriteLine(overloadResult);   // Output: 10
+
+            DoSomething(5, 3, out overloadResult); // Calls the second method
+            Console.WriteLine(overloadResult);     // Output: 8
+
+            #endregion
+
             Console.ReadLine(); // To hold the screen
+        }
+
+        static void DoSomething(int a, out int b)
+        {
+            b = a * 2;
+        }
+        static void DoSomething(int a, int c, out int b)
+        {
+            b = a + c;
         }
         static void Divide(int dividend, int divisor, out int quotient, out int remainder)
         {
