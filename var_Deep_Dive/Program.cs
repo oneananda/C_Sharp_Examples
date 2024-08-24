@@ -155,6 +155,9 @@ namespace var_Deep_Dive
             myVariable = 123;          // This will cause a compile-time error
             
             */
+
+            Console.WriteLine($"var myVariable = \"Hello\";  // Treated as string");
+            Console.WriteLine($"myVariable = 123;          // This will cause a compile-time error");
             Console.WriteLine($"You cannot assign a value of a different type (e.g., assigning an int to a variable inferred as a string)");
 
             Console.WriteLine(string.Empty);
@@ -172,7 +175,24 @@ namespace var_Deep_Dive
             // The above code will not compile because var cannot be used as a field.
             
             */
+            Console.WriteLine($"private var myField;  // This will cause a compile-time error");
             Console.WriteLine($"var cannot be Used as a Field Type");
+
+            Console.WriteLine(string.Empty);
+
+            #endregion
+
+            #region Example 10: Rules & Restrictions of var - Cannot be Used with Nullable Types Directly
+
+            Console.WriteLine($"Example 10: Rules & Restrictions of var - Cannot be Used with Nullable Types Directly");
+
+            /*
+             
+            var myNullable = null;  // This will cause a compile-time error
+            
+            */
+            Console.WriteLine($"var myNullable = null;  // This will cause a compile-time error");
+            Console.WriteLine($"Cannot be Used with Nullable Types Directly");
 
             Console.WriteLine(string.Empty);
 
