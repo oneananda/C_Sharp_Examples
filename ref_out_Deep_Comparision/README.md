@@ -22,19 +22,15 @@ out: Used when you want to return multiple values from a method.
 
 ## Comparison Summary: `ref` vs `out`
 
-| Feature/Aspect               | `ref`                                       | `out`                                       |
+| Aspect                       | `ref`                                       | `out`                                       |
 |------------------------------|---------------------------------------------|---------------------------------------------|
-| **Initialization Requirement** | Must be initialized before being passed to the method. | Does not need to be initialized before being passed. The method is required to assign it a value. |
-| **Modification**             | The method can modify the passed variable, and changes will be reflected outside the method. | The method must assign a value to the variable before it exits. |
-| **Return Values**            | Used when you want to modify the input value and possibly return it. | Used to return multiple values from a method, without affecting the input value. |
-| **Common Use Cases**         | Updating the value of a parameter, preserving its previous state. | Returning additional data from a method, such as in `TryParse` methods. |
-| **Default Value Handling**   | The variable retains its value unless explicitly changed by the method. | The method must assign a value; there is no initial value to retain. |
-| **Behavior with Objects**    | Allows modification of object properties, and the object reference itself can be changed. | Requires the method to set the variable, often used to return new objects or status messages. |
-| **Compile-Time Checking**    | Ensures the variable is initialized before passing it. | Ensures the variable is assigned before the method returns. |
+| **Initialization**           | Must be initialized before passing.         | No need to initialize before passing.       |
+| **Purpose**                  | Modify existing data and return it.         | Return multiple values from a method.       |
+| **Assignment Inside Method** | Not mandatory.                              | Mandatory before the method returns.        |
+| **Use Case Example**         | Updating a value passed to the method.      | Parsing or methods returning multiple values. |
 
 
-
-### Classes and Methods
+### Classes and Methods used in the examples
 
 - **Person Class**: A simple class with two properties: `Name` (string) and `Age` (int).
 - **Program Class**: The main class that contains the examples demonstrating the usage of `ref` and `out`.
