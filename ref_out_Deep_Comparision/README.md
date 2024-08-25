@@ -1,4 +1,4 @@
-# ref_out_Deep_Comparision
+# `ref` and `out` Deep Comparision
 
 This project provides a detailed comparison of the `ref` and `out` keywords in C#. It includes examples demonstrating how to combine both `ref` and `out` parameters in methods to modify and return values. The examples also illustrate how these keywords can be used with both primitive types and objects.
 
