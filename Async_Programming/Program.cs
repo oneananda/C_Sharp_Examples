@@ -74,6 +74,17 @@
             #endregion
 
 
+            #region Example 6 Using WhenAll to Run Multiple Tasks Concurrently
+            Console.WriteLine($"Example 6 Using WhenAll to Run Multiple Tasks Concurrently");
+
+            Console.WriteLine("Starting concurrent operations...");
+            await Task.WhenAll(FirstOperationAsync(), SecondOperationAsync());
+            Console.WriteLine("All operations completed concurrently!");
+
+            Console.WriteLine(string.Empty);
+            #endregion
+
+
             Console.ReadLine(); // Hold the screen
         }
         static async Task FirstOperationAsync()
