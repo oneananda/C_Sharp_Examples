@@ -43,7 +43,30 @@
             #endregion
 
 
+            #region Example 4 Handling Exceptions in Async Methods
+            Console.WriteLine($"Example 4 Handling Exceptions in Async Methods");
+
+            try
+            {
+                int result2 = await DivideAsync(10, 0);
+                Console.WriteLine($"Result: {result2}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+
+            Console.WriteLine(string.Empty);
+            #endregion
+
+
+
             Console.ReadLine(); // Hold the screen
+        }
+        static async Task<int> DivideAsync(int a, int b)
+        {
+            await Task.Delay(500); // Simulate async work
+            return a / b; // Will throw DivideByZeroException if b is 0
         }
 
         static async Task<int> CalculateSumAsync(int a, int b)
