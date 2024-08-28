@@ -61,7 +61,31 @@
 
 
 
+
+            #region Example 5 Chaining Multiple Async Calls
+            Console.WriteLine($"Example 5 Chaining Multiple Async Calls");
+
+            Console.WriteLine("Starting operations...");
+            await FirstOperationAsync();
+            await SecondOperationAsync();
+            Console.WriteLine("All operations completed!");
+
+            Console.WriteLine(string.Empty);
+            #endregion
+
+
             Console.ReadLine(); // Hold the screen
+        }
+        static async Task FirstOperationAsync()
+        {
+            await Task.Delay(1000); // Simulate async work
+            Console.WriteLine("First operation completed.");
+        }
+
+        static async Task SecondOperationAsync()
+        {
+            await Task.Delay(1000); // Simulate async work
+            Console.WriteLine("Second operation completed.");
         }
         static async Task<int> DivideAsync(int a, int b)
         {
