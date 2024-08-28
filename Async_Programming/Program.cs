@@ -85,7 +85,39 @@
             #endregion
 
 
+            #region Example 7 Async with Cancellation Tokens
+            Console.WriteLine($"Example 7 Async with Cancellation Tokens");
+
+            var cts = new CancellationTokenSource();
+            var task = LongRunningOperationAsync(cts.Token);
+
+            // Cancel the operation after 2 seconds
+            cts.CancelAfter(2000);
+
+            try
+            {
+                await task;
+                Console.WriteLine("Operation completed successfully.");
+            }
+            catch (OperationCanceledException)
+            {
+                Console.WriteLine("Operation was canceled.");
+            }
+
+            Console.WriteLine(string.Empty);
+            #endregion
+
+
             Console.ReadLine(); // Hold the screen
+        }
+        static async Task LongRunningOperationAsync(CancellationToken cancellationToken)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                cancellationToken.ThrowIfCancellationRequested();
+                Console.WriteLine($"Step {i + 1}/5");
+                await Task.Delay(1000, cancellationToken); // Simulate work
+            }
         }
         static async Task FirstOperationAsync()
         {
