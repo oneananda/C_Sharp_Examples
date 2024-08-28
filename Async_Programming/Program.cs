@@ -32,7 +32,24 @@
             #endregion
 
 
+            #region Example 3 Async Method Returning a Value
+            Console.WriteLine($"Example 3 Async Method Returning a Value");
+
+            Console.WriteLine("Calculating...");
+            int result = await CalculateSumAsync(5, 10);
+            Console.WriteLine($"Result: {result}");
+
+            Console.WriteLine(string.Empty);
+            #endregion
+
+
             Console.ReadLine(); // Hold the screen
+        }
+
+        static async Task<int> CalculateSumAsync(int a, int b)
+        {
+            await Task.Delay(1000); // Simulate an asynchronous operation
+            return a + b;
         }
 
         static async Task DoWorkAsync()
