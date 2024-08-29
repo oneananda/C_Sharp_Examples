@@ -8,15 +8,11 @@ namespace Delegate_Deep_Dive
 {
     public class MulticastDelegateExample
     {
-
         public MulticastDelegateExample() { }
-
-
         public static void MulticastDelegate()
         {
             #region Example 2 Multicast Delegate Example
             Console.WriteLine($"Example 2 Multicast Delegate Example");
-
 
             PrintWithOptionsDelegate pd = PrintWithOptions1;
 
@@ -28,7 +24,7 @@ namespace Delegate_Deep_Dive
             Console.WriteLine(string.Empty);
             #endregion
         }
-        public static void PrintWithOptions1(string message, string options)
+        private static void PrintWithOptions1(string message, string options)
         {
             if (options == string.Empty)
             {
@@ -40,7 +36,7 @@ namespace Delegate_Deep_Dive
             }
         }
 
-        public static void PrintWithOptions2(string message, string options)
+        private static void PrintWithOptions2(string message, string options)
         {
             if (options == string.Empty)
             {
