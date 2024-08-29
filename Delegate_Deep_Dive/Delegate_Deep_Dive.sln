@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate_Deep_Dive", "Delegate_Deep_Dive.csproj", "{CFB0AA42-F295-4841-8D80-FDD4C0EC898F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFB0AA42-F295-4841-8D80-FDD4C0EC898F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB0AA42-F295-4841-8D80-FDD4C0EC898F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB0AA42-F295-4841-8D80-FDD4C0EC898F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB0AA42-F295-4841-8D80-FDD4C0EC898F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AD879F5-D54A-4780-9828-C4A882E7B7DE}
+	EndGlobalSection
+EndGlobal
