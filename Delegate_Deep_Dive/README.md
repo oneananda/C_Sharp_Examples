@@ -73,6 +73,28 @@ When the `DelegateAsParameter()` method is called, it demonstrates the following
 
 This pattern is useful for scenarios where we want to perform different operations based on the method passed as a delegate, enabling greater flexibility in our code.
 
+## Example 4 : Anonymous Method Example
+
+### Overview
+In this example, we explore the use of anonymous methods in C#. An anonymous method is a method without a name that is defined using the `delegate` keyword. We create a delegate to print messages and use an anonymous method to implement the delegate's functionality.
+
+### Step 1: Declare a Delegate
+The first step involves declaring a delegate named `PrintDelegateForAnonymous`. This delegate defines the signature of methods that can be referenced, accepting a single string parameter and returning void.
+
+### Step 2: Create an Anonymous Method
+In the `AnonymousMethod()` method, we instantiate the `PrintDelegateForAnonymous` delegate and assign it an anonymous method. The anonymous method is defined using the `delegate` keyword and prints the message passed to it.
+
+### Step 3: Invoke the Anonymous Method
+After the delegate is assigned the anonymous method, we invoke the delegate by passing a string message. The anonymous method executes, printing the message to the console.
+
+### Summary
+This example demonstrates how anonymous methods can be used to define method bodies inline, without the need to explicitly declare a separate method. Anonymous methods provide a concise way to implement delegates, especially in scenarios where the method body is small and used only once.
+
+When the `AnonymousMethod()` method is called, it demonstrates the following behavior:
+- The delegate `pda` is assigned an anonymous method that prints the message to the console.
+- The delegate is invoked with the message `"Hello from an anonymous method!"`, which is then printed to the console.
+
+This pattern is useful for scenarios where we need to define quick, short-lived methods inline, making the code more readable and reducing the overhead of defining multiple named methods.
 
 
 
