@@ -10,6 +10,8 @@ namespace Delegate_Deep_Dive
         {
             BasicDelegateExample.BasicDelegate();
             MulticastDelegateExample.MulticastDelegate();
+            DelegateAsParameterExample.DelegateAsParameter();
+
             Console.ReadLine(); // Hold screen
         }      
     }
