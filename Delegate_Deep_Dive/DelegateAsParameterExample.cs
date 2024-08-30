@@ -26,9 +26,13 @@ namespace Delegate_Deep_Dive
 
         public static void DelegateAsParameter()
         {
+            Console.WriteLine($"Example 3 Delegate as a Parameter");
+
             PerformOperation(5, 3, Add);
 
             PerformOperation(5, 3, Multiply);
+
+            Console.WriteLine(string.Empty);
         }
     }
 }
