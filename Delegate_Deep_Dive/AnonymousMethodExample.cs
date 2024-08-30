@@ -9,7 +9,7 @@ namespace Delegate_Deep_Dive
     public delegate void PrintDelegateForAnonymous(string message);
     internal class AnonymousMethodExample
     {
-        public void AnonymousMethod()
+        public static void AnonymousMethod()
         {
             PrintDelegateForAnonymous pda = delegate (string message)
             {
