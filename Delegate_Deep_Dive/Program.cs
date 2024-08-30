@@ -11,7 +11,7 @@ namespace Delegate_Deep_Dive
             BasicDelegateExample.BasicDelegate();
             MulticastDelegateExample.MulticastDelegate();
             DelegateAsParameterExample.DelegateAsParameter();
-
+            AnonymousMethodExample.AnonymousMethod();
             Console.ReadLine(); // Hold screen
         }      
     }
