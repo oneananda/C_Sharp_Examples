@@ -43,7 +43,35 @@ When the `MulticastDelegate()` method is called, it demonstrates the following b
 
 This pattern is useful for scenarios where we need to perform multiple operations in response to a single event or action.
 
+## Example 3: Delegate as a Parameter Example
 
+### Overview
+In this example, we work with a delegate that is passed as a parameter to a method. We define a delegate that performs mathematical operations and then pass different methods (addition and multiplication) as delegates to demonstrate how they can be used interchangeably.
+
+### Step 1: Declare a Delegate
+The first step involves declaring a delegate named `MathOperation`. This delegate defines the signature of methods that can be referenced, accepting two integers as parameters and returning an integer result.
+
+### Step 2: Create Methods That Match the Delegate Signature
+Two methods are created that match the signature defined by the delegate:
+- `Add(int a, int b)`: Adds two integers and returns the result.
+- `Multiply(int a, int b)`: Multiplies two integers and returns the result.
+
+### Step 3: Use the Delegate as a Parameter
+The method `PerformOperation(int a, int b, MathOperation mathOperation)` is designed to accept a `MathOperation` delegate as a parameter. Inside this method, the delegate is invoked with the provided integers, and the result is printed to the console.
+
+### Step 4: Invoke the Methods with Different Delegates
+In the `DelegateAsParameter()` method, the `PerformOperation` method is called twice:
+- First, with the `Add` method as the delegate, which results in the addition of the numbers.
+- Second, with the `Multiply` method as the delegate, which results in the multiplication of the numbers.
+
+### Summary
+This example showcases how delegates can be passed as parameters to methods, allowing for flexible and reusable code. By passing different methods as delegates, we can perform various operations without modifying the method that executes them.
+
+When the `DelegateAsParameter()` method is called, it demonstrates the following behavior:
+- The `Add` method is invoked through the delegate, resulting in the sum of the numbers.
+- The `Multiply` method is invoked through the delegate, resulting in the product of the numbers.
+
+This pattern is useful for scenarios where we want to perform different operations based on the method passed as a delegate, enabling greater flexibility in our code.
 
 
 
