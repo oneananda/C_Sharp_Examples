@@ -1,6 +1,6 @@
 # Delegate Deep Dive
 
-This project demonstrates a basic usage of delegates in C#. A delegate is a type that represents references to methods with a specific parameter list and return type. In this example, we explore how to declare, instantiate, and invoke a delegate.
+This repository demonstrates a basic usage of delegates in C#. A delegate is a type that represents references to methods with a specific parameter list and return type. In this example, we explore how to declare, instantiate, and invoke a delegate.
 
 ## Example 1: Basic Delegate Example
 
