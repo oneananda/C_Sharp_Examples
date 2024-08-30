@@ -11,6 +11,7 @@ namespace Delegate_Deep_Dive
     {
         public static void AnonymousMethod()
         {
+            Console.WriteLine($"Example 4 : Anonymous Method Example");
             PrintDelegateForAnonymous pda = delegate (string message)
             {
                 Console.WriteLine(message);
