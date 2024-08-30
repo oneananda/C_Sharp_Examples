@@ -8,6 +8,7 @@ namespace Delegate_Deep_Dive
 {
     public class MulticastDelegateExample
     {
+        public delegate void PrintWithOptionsDelegate(string message, string options);
         public MulticastDelegateExample() { }
         public static void MulticastDelegate()
         {
