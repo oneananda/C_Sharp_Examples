@@ -17,6 +17,7 @@ namespace Delegate_Deep_Dive
                 Console.WriteLine(message);
             };
             pda("Hello from an anonymous method!");
+            Console.WriteLine(string.Empty);    
         }
     }
 }
