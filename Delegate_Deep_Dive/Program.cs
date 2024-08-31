@@ -1,10 +1,8 @@
 ﻿
 using Delegate_Deep_Dive.Advanced_Delegate;
-using System.Security.Cryptography.X509Certificates;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Delegate_Deep_Dive
-{    
+{
     public class Program
     {
         static void Main(string[] args)
