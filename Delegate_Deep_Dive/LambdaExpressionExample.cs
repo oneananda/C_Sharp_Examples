@@ -13,7 +13,7 @@ namespace Delegate_Deep_Dive
         {
             Console.WriteLine($"Example 4 : Anonymous Method Example");
 
-            MathOperationLambda add = (a,b)=>a + b;
+            MathOperationLambda add = (a, b) => a + b;
             MathOperationLambda multiply = (a, b) => a * b;
 
             Console.WriteLine("Sum: " + add(10, 5));
