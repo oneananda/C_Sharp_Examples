@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns_Factory_Method_Basic.After_Factory_Pattern
 {
-    public interface INewNotification
+    public class EmailNotificationFactory : NotificationFactory
     {
-        void Notify(string message);
+        public override INewNotification CreateNewNotification()
+        {
+            return new NewEmailNotification();
+        }
     }
 }
