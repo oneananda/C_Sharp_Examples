@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns_Factory_Method_Basic.After_Factory_Pattern
 {
-    public class EmailNotificationFactory : NotificationFactory
+    public class SMSNotificationFactory : NotificationFactory
     {
         public override INewNotification CreateNewNotification()
         {
-            return new NewEmailNotification();
+           return new NewSMSNotification();
         }
-    }   
+    }
 }
