@@ -1,4 +1,5 @@
-﻿using DesignPatterns_Factory_Method_Basic.Before_Factory_Pattern;
+﻿using DesignPatterns_Factory_Method_Basic.After_Factory_Pattern;
+using DesignPatterns_Factory_Method_Basic.Before_Factory_Pattern;
 
 namespace DesignPatterns_Factory_Method_Basic
 {
@@ -20,7 +21,16 @@ namespace DesignPatterns_Factory_Method_Basic
                Adding new notification types requires modifying the SendNotification method, 
                violating the Open/Closed Principle.
             */
+            #endregion
 
+
+            #region  After_Factory_Pattern
+
+            NotificationFactory emailFactory = new EmailNotificationFactory();
+            emailFactory.SendNotification("Hello via Email!");
+
+            NotificationFactory smsFactory = new SMSNotificationFactory();
+            smsFactory.SendNotification("Hello via SMS!");
 
             #endregion
 
