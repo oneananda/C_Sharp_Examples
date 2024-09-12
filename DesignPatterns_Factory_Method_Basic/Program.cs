@@ -32,6 +32,11 @@ namespace DesignPatterns_Factory_Method_Basic
             NotificationFactory smsFactory = new SMSNotificationFactory();
             smsFactory.SendNotification("Hello via SMS!");
 
+            // Adding more types are very easy
+            // Adding WhatsApp type
+
+
+
             #endregion
 
 
