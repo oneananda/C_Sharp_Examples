@@ -33,7 +33,7 @@ namespace DesignPatterns_Factory_Method_Basic
             smsFactory.SendNotification("Hello via SMS!");
 
             // Adding more types are very easy
-            // Aypedding WhatsApp t
+            // Applying WhatsApp type notification, likewise we can add any client instantly whenever needed.
 
             NotificationFactory whatsAppFactory = new WhatsAppNotificationFactory();
             whatsAppFactory.SendNotification("Hello via WhatsApp!");
