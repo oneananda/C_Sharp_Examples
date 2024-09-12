@@ -8,9 +8,11 @@ namespace DesignPatterns_Factory_Method_Basic
         static void Main(string[] args)
         {
             #region Before_Factory_Pattern
+
+            Console.WriteLine($"Before_Factory_Pattern");
             var service = new NotificationService();
-            //service.SendNotification("Email", "Hello via Email!");
-            //service.SendNotification("SMS", "Hello via SMS!");
+            service.SendNotification("Email", "Hello via Email!");
+            service.SendNotification("SMS", "Hello via SMS!");
 
             /*
                Issues with the Above Approach:
@@ -25,6 +27,8 @@ namespace DesignPatterns_Factory_Method_Basic
 
 
             #region  After_Factory_Pattern
+
+            Console.WriteLine($"After_Factory_Pattern");
 
             NotificationFactory emailFactory = new EmailNotificationFactory();
             emailFactory.SendNotification("Hello via Email!");
