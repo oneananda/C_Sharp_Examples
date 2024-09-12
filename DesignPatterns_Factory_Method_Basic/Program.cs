@@ -38,7 +38,8 @@ namespace DesignPatterns_Factory_Method_Basic
             NotificationFactory whatsAppFactory = new WhatsAppNotificationFactory();
             whatsAppFactory.SendNotification("Hello via WhatsApp!");
 
-
+            // The Factory Method pattern can feel like overkill when the number of classes and their associated factories grow,
+            // making the addition of new types somewhat cumbersome.
             #endregion
 
 
