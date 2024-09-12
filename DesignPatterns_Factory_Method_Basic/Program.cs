@@ -9,8 +9,8 @@ namespace DesignPatterns_Factory_Method_Basic
         {
             #region Before_Factory_Pattern
             var service = new NotificationService();
-            service.SendNotification("Email", "Hello via Email!");
-            service.SendNotification("SMS", "Hello via SMS!");
+            //service.SendNotification("Email", "Hello via Email!");
+            //service.SendNotification("SMS", "Hello via SMS!");
 
             /*
                Issues with the Above Approach:
@@ -33,8 +33,10 @@ namespace DesignPatterns_Factory_Method_Basic
             smsFactory.SendNotification("Hello via SMS!");
 
             // Adding more types are very easy
-            // Adding WhatsApp type
+            // Aypedding WhatsApp t
 
+            NotificationFactory whatsAppFactory = new WhatsAppNotificationFactory();
+            whatsAppFactory.SendNotification("Hello via WhatsApp!");
 
 
             #endregion
