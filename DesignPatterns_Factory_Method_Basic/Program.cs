@@ -43,6 +43,7 @@ namespace DesignPatterns_Factory_Method_Basic
             whatsAppFactory.SendNotification("Hello via WhatsApp!");
 
 
+            // Disadvantages
             // The Factory Method pattern can feel like overkill when the number of classes and their associated factories grow,
             // making the addition of new types somewhat cumbersome.
             #endregion
