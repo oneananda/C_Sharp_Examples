@@ -14,9 +14,25 @@ namespace MSTest_Basic
             int result = calc.Add(a, b);
 
             // Assert
-            Assert.AreEqual((a + b), result);
+            Assert.AreEqual(30, result);
+        }
+
+        [TestMethod]
+        public void Calculator_Add_With_NegativeNumbers_Returns_Correct_Sum()
+        {
+            // Arrange
+            var calc = new Calculator();
+            int a = -5, b = 15;
+
+            // Act
+            int result = calc.Add(a, b);
+
+            // Assert
+            Assert.AreEqual(10, result);
         }
     }
+
+
 
     public class Calculator
     {
