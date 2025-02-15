@@ -32,6 +32,20 @@ namespace MSTest_Basic
         }
 
         [TestMethod]
+        public void Calculator_Subtract_Returns_Correct_Result()
+        {
+            // Arrange
+            var calc = new Calculator();
+            int a = 20, b = 10;
+
+            // Act
+            int result = calc.Subtract(a, b);
+
+            // Assert
+            Assert.AreEqual(10, result);
+        }
+
+        [TestMethod]
         [ExpectedException(typeof(DivideByZeroException))]
         public void Calculator_Divide_ByZero_Throws_Exception()
         {
@@ -49,6 +63,8 @@ namespace MSTest_Basic
     public class Calculator
     {
         public int Add(int a, int b) => a + b;
+
+        public int Subtract(int a, int b) => a - b;
 
         public float Divide(int a, int b)
         {
