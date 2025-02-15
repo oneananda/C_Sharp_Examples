@@ -17,6 +17,23 @@ namespace MSTest_Basic
             Assert.AreEqual(30, result);
         }
 
+        // Parameterized test for the Add method using DataTestMethod and DataRow
+        [DataTestMethod]
+        [DataRow(1, 2, 3)]
+        [DataRow(100, 200, 300)]
+        [DataRow(-5, 5, 0)]
+        public void Calculator_Add_DataTestMethod(int a, int b, int expected)
+        {
+            // Arrange
+            var calc = new Calculator();
+
+            // Act
+            int result = calc.Add(a, b);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
         [TestMethod]
         public void Calculator_Add_With_NegativeNumbers_Returns_Correct_Sum()
         {
