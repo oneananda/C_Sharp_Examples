@@ -25,5 +25,15 @@ namespace MSTest_Advanced
 
             return null;
         }
+        public async Task<bool> ChangePasswordAsync(string username, string oldPassword, string newPassword)
+        {
+            var user = await _userRepository.GetUserByUsernameAsync(username);
+            if (user == null || user.Password != oldPassword)
+                return false;
+
+            user.Password = newPassword;
+            // In a real-world scenario, you would persist the changes here.
+            return true;
+        }
     }
 }
