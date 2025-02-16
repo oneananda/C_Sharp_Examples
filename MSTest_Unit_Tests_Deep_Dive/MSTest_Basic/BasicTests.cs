@@ -75,6 +75,21 @@ namespace MSTest_Basic
 
             // Assert is handled by the ExpectedException attribute.
         }
+
+        // Test for the Multiply method
+        [TestMethod]
+        public void Calculator_Multiply_Returns_Correct_Result()
+        {
+            // Arrange
+            var calc = new Calculator();
+            int a = 5, b = 4;
+
+            // Act
+            int result = calc.Multiply(a, b);
+
+            // Assert
+            Assert.AreEqual(20, result);
+        }
     }
 
     public class Calculator
@@ -82,6 +97,8 @@ namespace MSTest_Basic
         public int Add(int a, int b) => a + b;
 
         public int Subtract(int a, int b) => a - b;
+
+        public int Multiply(int a, int b) => a * b;
 
         public float Divide(int a, int b)
         {
