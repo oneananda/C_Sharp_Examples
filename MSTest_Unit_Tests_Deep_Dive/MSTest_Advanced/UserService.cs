@@ -14,5 +14,16 @@ namespace MSTest_Advanced
         {
             _userRepository = userRepository;
         }
+        public async Task<User> AuthenticateAsync(string username, string password)
+        {
+            var user = await _userRepository.GetUserByUsernameAsync(username);
+            if (user == null)
+                return null;
+
+            if (user.Password == password && user.IsActive)
+                return user;
+
+            return null;
+        }
     }
 }
