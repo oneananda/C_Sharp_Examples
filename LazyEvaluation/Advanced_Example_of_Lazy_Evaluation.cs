@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LazyEvaluation
 {
-    class DatabaseConnection
+    public class DatabaseConnection
     {
         public string ConnectionString { get; }
         public bool IsOpen { get; }
