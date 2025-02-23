@@ -11,19 +11,19 @@ namespace TPL_Examples
         public static void ReturnValueTaskMethod()
         {
             string op1 = "Add";
-            Task<int> task = Task.Run(() =>
+            Task<int> task = Task.Run(async () =>
             {
                 Console.WriteLine("");
-                return CalculateValue(2, 4, op1);
+                return await CalculateValue(2, 4, op1);
             });
 
 
             string op2 = "Subtract";
 
-            Task<int> task2 = Task.Run(() =>
+            Task<int> task2 = Task.Run(async () =>
             {
                 Console.WriteLine("");
-                return CalculateValue(10, 4, op2);
+                return await CalculateValue(10, 4, op2);
             });
 
             Console.WriteLine($"Result: {task.Result}"); // Blocks until task completes
