@@ -10,20 +10,20 @@ namespace TPL_Examples
     {
         public static void ReturnValueTaskMethod()
         {
-            string calculateOperation = "Add";
+            string op1 = "Add";
             Task<int> task = Task.Run(() =>
             {
                 Console.WriteLine("");
-                return CalculateValue(2, 4, calculateOperation);
+                return CalculateValue(2, 4, op1);
             });
-            
 
-            calculateOperation = "Subtract";
+
+            string op2 = "Subtract";
 
             Task<int> task2 = Task.Run(() =>
             {
                 Console.WriteLine("");
-                return CalculateValue(10, 4, calculateOperation);
+                return CalculateValue(10, 4, op2);
             });
 
             Console.WriteLine($"Result: {task.Result}"); // Blocks until task completes
