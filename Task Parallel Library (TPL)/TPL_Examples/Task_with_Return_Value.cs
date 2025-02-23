@@ -13,7 +13,7 @@ namespace TPL_Examples
             string op1 = "Add";
             Task<int> task = Task.Run(async () =>
             {
-                Console.WriteLine("");
+                Console.WriteLine($"Calculating {op1}");
                 return await CalculateValue(2, 4, op1);
             });
 
@@ -22,12 +22,21 @@ namespace TPL_Examples
 
             Task<int> task2 = Task.Run(async () =>
             {
-                Console.WriteLine("");
-                return await CalculateValue(10, 4, op2);
+                Console.WriteLine($"Calculating {op2}");
+                return await CalculateValue(6, 2, op2);
             });
 
-            Console.WriteLine($"Result: {task.Result}"); // Blocks until task completes
-            Console.WriteLine($"Result: {task2.Result}"); // Blocks until task completes
+            string op3 = "Divide";
+
+            Task<int> task3 = Task.Run(async () =>
+            {
+                Console.WriteLine($"Calculating {op3}");
+                return await CalculateValue(10, 5, op3);
+            });
+
+            Console.WriteLine($"Task1 Result: {task.Result}"); // Blocks until task completes
+            Console.WriteLine($"Task2 Result: {task2.Result}"); // Blocks until task completes
+            Console.WriteLine($"Task3 Result: {task3.Result}"); // Blocks until task completes
         }
 
         private static async Task<int>? CalculateValue(int v1, int v2, string calculateOperation)
@@ -43,6 +52,7 @@ namespace TPL_Examples
             {
                 case "Add": return v1 + v2;
                 case "Subtract": return v1 - v2;
+                case "Divide": return v1 / v2;
                 default: return v1 + v2;
             }
         }
