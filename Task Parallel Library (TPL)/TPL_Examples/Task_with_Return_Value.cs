@@ -21,6 +21,14 @@ namespace TPL_Examples
 
         private static async Task<int>? CalculateValue(int v1, int v2, string v3)
         {
+
+            // Applying more waits to see the behaviour
+
+            for (int counter = 1; counter <= 10; counter++)
+            {
+                Console.WriteLine("Sleeping for time being!");
+                Thread.Sleep(1000);
+            }
             switch (v3)
             {
                 case "Add": return v1 + v2;
