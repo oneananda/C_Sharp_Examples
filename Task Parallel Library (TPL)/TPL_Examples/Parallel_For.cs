@@ -11,7 +11,7 @@ namespace TPL_Examples
         public static void Parallel_For_Method()
         {
             Console.WriteLine($"Parallel For Loop!");
-            Parallel.For(0, 5, i =>
+            Parallel.For(1, 10, i =>
             {
                 Console.WriteLine($"Processing {i} on thread id {Task.CurrentId}");
             });
