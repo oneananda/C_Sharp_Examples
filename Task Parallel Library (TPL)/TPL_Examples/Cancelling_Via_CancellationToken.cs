@@ -29,6 +29,15 @@ namespace TPL_Examples
 
             Thread.Sleep(1500); // Let it run for 1.5 seconds
             cts.Cancel(); // Cancel the task
+
+            try
+            {
+                task.Wait();
+            }
+            catch (AggregateException ex)
+            {
+                Console.WriteLine($"Exception: {ex.InnerException.Message}");
+            }
         }
     }
 }
