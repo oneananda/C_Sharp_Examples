@@ -10,7 +10,25 @@ namespace TPL_Examples
     {
         public static void CancellationToken_Method()
         {
+            CancellationTokenSource cts = new CancellationTokenSource();
+            CancellationToken token = cts.Token;
 
+            Task task = Task.Run(() =>
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    if (token.IsCancellationRequested)
+                    {
+                        Console.WriteLine("Task canceled.");
+                        return;
+                    }
+                    Console.WriteLine($"Step {i}");
+                    Thread.Sleep(500);
+                }
+            }, token);
+
+            Thread.Sleep(1500); // Let it run for 1.5 seconds
+            cts.Cancel(); // Cancel the task
         }
     }
 }
