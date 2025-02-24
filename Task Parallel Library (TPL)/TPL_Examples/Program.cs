@@ -13,7 +13,9 @@
 
             */
 
-            Parallel_For.Parallel_For_Method();
+            //Parallel_For.Parallel_For_Method();
+
+            Parallel_Invoke.Parallel_Invoke_Method();
 
             Console.WriteLine("Hello, World, it's Task Parallel Library (TPL)!");
         }
