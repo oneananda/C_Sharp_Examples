@@ -16,7 +16,9 @@
 
             //Parallel_Invoke.Parallel_Invoke_Method();
 
-            Cancelling_Via_CancellationToken.CancellationToken_Method();
+            //Cancelling_Via_CancellationToken.CancellationToken_Method();
+
+            Parallel_ForEach.Parallel_ForEach_Method();
 
             Console.WriteLine("Hello, World, it's Task Parallel Library (TPL)!");
         }
