@@ -18,7 +18,9 @@
 
             //Cancelling_Via_CancellationToken.CancellationToken_Method();
 
-            Parallel_ForEach.Parallel_ForEach_Method();
+            //Parallel_ForEach.Parallel_ForEach_Method();
+
+            Long_Running_Tasks.Long_Running_Tasks_Method();
 
             Console.WriteLine("Hello, World, it's Task Parallel Library (TPL)!");
         }
