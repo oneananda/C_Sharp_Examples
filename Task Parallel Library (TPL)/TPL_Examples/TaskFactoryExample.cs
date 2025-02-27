@@ -8,7 +8,7 @@ namespace TPL_Examples
 {
     public class TaskFactoryExample
     {
-        public async Task TaskFactoryExample_Method()
+        public static async Task TaskFactoryExample_Method()
         {
             TaskFactory factory = new TaskFactory();
             Task[] tasks = new Task[3];
