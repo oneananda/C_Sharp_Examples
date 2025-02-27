@@ -22,7 +22,9 @@
 
             //Long_Running_Tasks.Long_Running_Tasks_Method();
 
-            TaskFactoryExample.TaskFactoryExample_Method();
+            //TaskFactoryExample.TaskFactoryExample_Method();
+
+            NestedTasks.NestedTasks_Method();
 
             Console.WriteLine("Hello, World, it's Task Parallel Library (TPL)!");
         }
