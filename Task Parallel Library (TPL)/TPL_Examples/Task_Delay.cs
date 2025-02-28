@@ -8,6 +8,8 @@ namespace TPL_Examples
 {
     public class Task_Delay
     {
-
+        public static async Task Task_Delay_Method()
+        {
+        }
     }
 }
