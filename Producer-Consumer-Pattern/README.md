@@ -18,3 +18,12 @@ This pattern is widely used in **multithreading and parallel computing** to deco
 
 ---
 
+### **🔹 Real-World Examples**
+1. **Message Queues** (RabbitMQ, Kafka) – Producers publish messages, consumers process them.
+2. **Logging Systems** – Applications log events (producer), and another system writes them to files/databases (consumer).
+3. **Order Processing** – Customers place orders (producer), and a fulfillment service processes them (consumer).
+4. **Web Crawlers** – A thread fetches URLs (producer), and another thread parses them (consumer).
+
+---
+
+
