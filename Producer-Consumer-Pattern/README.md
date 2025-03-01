@@ -26,4 +26,33 @@ This pattern is widely used in **multithreading and parallel computing** to deco
 
 ---
 
+### **🔹 Simple Producer-Consumer Workflow**
+1. **Producer Thread** generates data and adds it to a queue.
+2. **Consumer Thread** fetches data from the queue and processes it.
+3. A **shared queue (buffer)** acts as a mediator between them.
+4. If the queue is full, the **producer waits** (bounded buffer).
+5. If the queue is empty, the **consumer waits** for new data.
 
+📌 *A thread-safe collection like `BlockingCollection<T>` in C# makes implementation easy.*
+
+---
+
+### **🔹 Basic Diagram**
+```
++------------+      +-----------+      +------------+
+|  Producer  | ---> |  Buffer   | ---> |  Consumer  |
++------------+      +-----------+      +------------+
+```
+- **Producer**: Generates data.
+- **Buffer**: Stores data temporarily.
+- **Consumer**: Processes data.
+
+---
+
+### **🔹 Key Implementations in C#**
+1. **Using `BlockingCollection<T>`** (Thread-safe queue)
+2. **Using `ConcurrentQueue<T>` + Manual Synchronization**
+3. **Using `SemaphoreSlim` for fine-grained control**
+4. **Using Channels (`System.Threading.Channels`)** in .NET Core
+
+---
