@@ -26,6 +26,18 @@ namespace Producer_Consumer_Pattern
                 }
                 blockingCollection.CompleteAdding(); // Mark as complete
             });
+
+            // The consumer thread retrieves and processes numbers.
+
+            // Consumer Task
+            Task consumer = Task.Run(() =>
+            {
+                foreach (int item in blockingCollection.GetConsumingEnumerable()) // Automatically waits for items
+                {
+                    Console.WriteLine($"Consumed: {item}");
+                    Thread.Sleep(1000); // Simulate processing time
+                }
+            });
         }
     }
 }
