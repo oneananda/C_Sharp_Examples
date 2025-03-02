@@ -38,6 +38,10 @@ namespace Producer_Consumer_Pattern
                     Thread.Sleep(1000); // Simulate processing time
                 }
             });
+
+            // Starting the process
+            Task.WaitAll(producer, consumer);
+            Console.WriteLine("Processing complete.");
         }
     }
 }
