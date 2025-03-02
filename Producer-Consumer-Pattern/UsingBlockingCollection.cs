@@ -36,12 +36,13 @@ namespace Producer_Consumer_Pattern
             {
                 foreach (int item in blockingCollection.GetConsumingEnumerable()) // Automatically waits for items
                 {
-                    Console.WriteLine($"Consumed: {item}");
+                    Console.WriteLine($"[Consumer] Consumed: {item} (Processing item)");
                     Thread.Sleep(1000); // Simulate processing time
                 }
+                Console.WriteLine("[Consumer] No more items left to consume. Exiting...");
             });
 
-            // Starting the process
+            // Wait for both tasks to complete
             Task.WaitAll(producer, consumer);
             Console.WriteLine("Processing complete.");
         }
