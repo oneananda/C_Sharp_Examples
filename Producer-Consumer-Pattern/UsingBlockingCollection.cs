@@ -20,11 +20,13 @@ namespace Producer_Consumer_Pattern
             {
                 for (int i = 1; i <= 10; i++)
                 {
+                    // Add item to the collection (this blocks if the collection is full)
                     blockingCollection.Add(i); // Add item to the collection
-                    Console.WriteLine($"Produced: {i}");
+                    Console.WriteLine($"[Producer] Produced: {i} (Added to collection)");
                     Thread.Sleep(500); // Simulate work
                 }
                 blockingCollection.CompleteAdding(); // Mark as complete
+                Console.WriteLine("[Producer] No more items to produce. Marked collection as Complete.");
             });
 
             // The consumer thread retrieves and processes numbers.
