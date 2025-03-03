@@ -4,8 +4,12 @@
     {
         static void Main(string[] args)
         {
-            // Start Producer-Consumer Pattern
+            // Producer-Consumer Pattern
             UsingBlockingCollection.UsingBlockingCollection_Method();
+
+            // Multiple Producers & Consumers
+
+
             Console.WriteLine("Hello, Producer-Consumer Pattern!");
         }
     }
