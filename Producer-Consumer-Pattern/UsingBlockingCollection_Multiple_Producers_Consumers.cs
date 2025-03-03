@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Producer_Consumer_Pattern
 {
-    public class Multiple_Producers_Consumers
+    public class UsingBlockingCollection_Multiple_Producers_Consumers
     {
         public static void Multiple_Producers_Consumers_Method()
         {
