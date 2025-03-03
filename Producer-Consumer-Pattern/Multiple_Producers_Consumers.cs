@@ -29,6 +29,21 @@ namespace Producer_Consumer_Pattern
                     }
                 });
             }
+
+            // Multiple Consumers
+            Task[] consumers = new Task[3];
+            for (int i = 0; i < 3; i++)
+            {
+                int consumerId = i;
+                consumers[i] = Task.Run(() =>
+                {
+                    foreach (var item in queue.GetConsumingEnumerable()) // Automatically waits for new items
+                    {
+                        Console.WriteLine($"Consumer {consumerId} processed: {item}");
+                        Thread.Sleep(1000); // Simulating processing time
+                    }
+                });
+            }
         }
     }
 }
