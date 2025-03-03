@@ -10,6 +10,9 @@
             // Multiple Producers & Consumers
             UsingBlockingCollection_Multiple_Producers_Consumers.Multiple_Producers_Consumers_Method();
 
+            // Using ConcurrentQueue
+            UsingConcurrentQueue.UsingConcurrentQueue_Method();
+
             Console.WriteLine("Hello, Producer-Consumer Pattern!");
         }
     }

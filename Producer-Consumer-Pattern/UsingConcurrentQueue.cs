@@ -39,6 +39,9 @@ namespace Producer_Consumer_Pattern
                     }
                 }
             });
+
+            Task.WaitAll(producer, consumer);
+            Console.WriteLine("[Main] Processing complete.");
         }
     }
 }
