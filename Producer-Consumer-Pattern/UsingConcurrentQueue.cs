@@ -25,6 +25,20 @@ namespace Producer_Consumer_Pattern
                     Thread.Sleep(500); // Simulating work
                 }
             });
+
+            // Consumer Task
+            Task consumer = Task.Run(() =>
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    semaphore.Wait(); // Wait until an item is available
+                    if (queue.TryDequeue(out int item))
+                    {
+                        Console.WriteLine($"[Consumer] Consumed: {item}");
+                        Thread.Sleep(1000); // Simulating processing
+                    }
+                }
+            });
         }
     }
 }
