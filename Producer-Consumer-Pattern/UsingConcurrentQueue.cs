@@ -11,18 +11,20 @@ namespace Producer_Consumer_Pattern
     {
         static ConcurrentQueue<int> queue = new ConcurrentQueue<int>(); // Thread-safe queue
         static SemaphoreSlim semaphore = new SemaphoreSlim(0); // Controls consumer waiting
-
-        // Producer Task
-        Task producer = Task.Run(() =>
+        public static void UsingConcurrentQueue_Method()
         {
-            for (int i = 1; i <= 10; i++)
+            // Producer Task
+            Task producer = Task.Run(() =>
             {
-                queue.Enqueue(i); // Add item to the queue
-                Console.WriteLine($"[Producer] Produced: {i}");
+                for (int i = 1; i <= 10; i++)
+                {
+                    queue.Enqueue(i); // Add item to the queue
+                    Console.WriteLine($"[Producer] Produced: {i}");
 
-                semaphore.Release(); // Signal the consumer that an item is available
-                Thread.Sleep(500); // Simulating work
-            }
-        });
+                    semaphore.Release(); // Signal the consumer that an item is available
+                    Thread.Sleep(500); // Simulating work
+                }
+            });
+        }
     }
 }
