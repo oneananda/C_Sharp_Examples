@@ -44,6 +44,12 @@ namespace Producer_Consumer_Pattern
                     }
                 });
             }
+
+            Task.WaitAll(producers); // Wait for all producers to finish
+            queue.CompleteAdding();  // No more items will be added
+
+            Task.WaitAll(consumers); // Wait for all consumers to finish
+            Console.WriteLine("All work done!");
         }
     }
 }
