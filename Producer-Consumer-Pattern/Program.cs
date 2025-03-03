@@ -8,7 +8,7 @@
             UsingBlockingCollection.UsingBlockingCollection_Method();
 
             // Multiple Producers & Consumers
-
+            UsingBlockingCollection_Multiple_Producers_Consumers.Multiple_Producers_Consumers_Method();
 
             Console.WriteLine("Hello, Producer-Consumer Pattern!");
         }
