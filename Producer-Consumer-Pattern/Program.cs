@@ -13,6 +13,8 @@
             // Using ConcurrentQueue
             UsingConcurrentQueue.UsingConcurrentQueue_Method();
 
+            LoggingSystem.LoggingSystem_Method();
+
             Console.WriteLine("Hello, Producer-Consumer Pattern!");
         }
     }
