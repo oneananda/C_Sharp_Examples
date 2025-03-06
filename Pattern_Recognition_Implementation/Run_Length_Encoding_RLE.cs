@@ -17,6 +17,24 @@ namespace Pattern_Recognition_Implementation
             Console.WriteLine($"Encoded: {encoded}");
         }
 
+        public static string Decode(string encoded)
+        {
+            if (string.IsNullOrEmpty(encoded))
+                return "";
+
+            StringBuilder decoded = new StringBuilder();
+
+            for (int i = 0; i < encoded.Length; i += 2)
+            {
+                char character = encoded[i];
+                int count = int.Parse(encoded[i + 1].ToString());
+
+                decoded.Append(character, count);
+            }
+
+            return decoded.ToString();
+        }
+
         public static string Encode(string input)
         {
             if (string.IsNullOrEmpty(input))
