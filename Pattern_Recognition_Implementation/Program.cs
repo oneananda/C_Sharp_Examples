@@ -7,7 +7,8 @@
             Console.WriteLine("Run-Length Encoding (RLE)");
             Console.WriteLine(string.Empty);
             Run_Length_Encoding_RLE.Run_Length_Encoding_RLE_Method();
-            Console.WriteLine("Pattern Recognition!");
+            Console.WriteLine(string.Empty);
+            Console.WriteLine("Pattern Recognition Algorithms!");
         }
     }
 }
