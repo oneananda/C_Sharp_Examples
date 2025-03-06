@@ -8,6 +8,11 @@ namespace Pattern_Recognition_Implementation
 {
     public class Run_Length_Encoding_RLE
     {
+        public static void Run_Length_Encoding_RLE_Method()
+        {
+            string input = "AAAABBBCCDEEEE";
 
+            Console.WriteLine($"Original: {input}");
+        }
     }
 }
