@@ -12,9 +12,11 @@ namespace Pattern_Recognition_Implementation
         {
             string input = "AAAABBBCCDEEEE";
             string encoded = Encode(input);
+            string decoded = Decode(encoded);
 
             Console.WriteLine($"Original: {input}");
             Console.WriteLine($"Encoded: {encoded}");
+            Console.WriteLine($"Decoded: {decoded}");
         }
 
         public static string Decode(string encoded)
