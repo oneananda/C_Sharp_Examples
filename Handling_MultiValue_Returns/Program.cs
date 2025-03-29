@@ -65,6 +65,18 @@ namespace Handling_MultiValue_Returns
             Console.WriteLine($"Doubled: {results[0]}, Tripled: {results[1]}");
 
 
+            // Methode 4 : Using Collection by reference 
+            // If the values are of the same type or if we’re returning a variable number of items,
+            // we might choose to return an array or a collection like List<T>.
+
+            Console.WriteLine($"Using Collection by reference");
+
+            int[] initialized = new int[2];
+            GetDataViaCollectionReference(5, initialized);
+            Console.WriteLine($"Doubled: {initialized[0]}, Tripled: {initialized[1]}");
+            // Note : We are not returning any value, the values are passed back via reference
+
+
             Console.WriteLine("Handling_MultiValue_Returns!");
             Console.ReadLine(); // Hold the screen
         }
@@ -99,6 +111,12 @@ namespace Handling_MultiValue_Returns
         public static int[] GetDataViaArray(int input)
         {
             return new int[] { input * 2, input * 3 };
+        }
+
+        public static void GetDataViaCollectionReference(int input, int[] initialized)
+        {
+            initialized[0] = input * 2;
+            initialized[1] = input * 3;
         }
     }
 }
