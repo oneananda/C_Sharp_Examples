@@ -55,6 +55,16 @@ namespace Handling_MultiValue_Returns
             var pair = GetDataViaPair(5);
             Console.WriteLine($"Doubled: {pair.Key}, Tripled: {pair.Value}");
 
+            // Methode 4 : Arrays 
+            // If the values are of the same type or if we’re returning a variable number of items,
+            // we might choose to return an array or a collection like List<T>.
+
+            Console.WriteLine($"Using Arrays");
+
+            int[] results = GetDataViaArray(5);
+            Console.WriteLine($"Doubled: {results[0]}, Tripled: {results[1]}");
+
+
             Console.WriteLine("Handling_MultiValue_Returns!");
             Console.ReadLine(); // Hold the screen
         }
@@ -84,6 +94,11 @@ namespace Handling_MultiValue_Returns
         public static KeyValuePair<int, int> GetDataViaPair(int input)
         {
             return new KeyValuePair<int, int>(input * 2, input * 3);
+        }
+
+        public static int[] GetDataViaArray(int input)
+        {
+            return new int[] { input * 2, input * 3 };
         }
     }
 }
