@@ -1,4 +1,6 @@
-﻿namespace Handling_MultiValue_Returns
+﻿using System.Linq.Expressions;
+
+namespace Handling_MultiValue_Returns
 {
     internal class Program
     {
@@ -12,6 +14,8 @@
              * This is one of the older approaches but still useful in many cases.
             */
 
+            Console.WriteLine($"Out Parameters");
+
             int a, b;
             GetDataViaOut(5, out a, out b);
             Console.WriteLine($"Doubled: {a}, Tripled: {b}");
@@ -21,6 +25,7 @@
             // concise way to return multiple values.
             // They support deconstruction, making the code very readable.
 
+            Console.WriteLine($"Tuples");
             // Usage:
             var result = GetDataViaTuple(5);
             Console.WriteLine($"Doubled: {result.Doubled}, Tripled: {result.Tripled}");
@@ -28,6 +33,16 @@
             // Or using deconstruction:
             var (doubled, tripled) = GetDataViaTuple(5);
             Console.WriteLine($"Doubled: {doubled}, Tripled: {tripled}");
+
+            // Methode 3 : Custom Classes or Structs
+            // When the returned values are related,
+            // creating a custom type can make your code
+            // more expressive and maintainable.
+
+            Console.WriteLine($"Custom Struct");
+            // Usage:
+            var dataResult = GetDataViaCustom(5);
+            Console.WriteLine($"Doubled: {dataResult.Doubled}, Tripled: {dataResult.Tripled}");
 
             Console.WriteLine("Handling_MultiValue_Returns!");
             Console.ReadLine(); // Hold the screen
@@ -42,6 +57,17 @@
         public static (int Doubled, int Tripled) GetDataViaTuple(int input)
         {
             return (input * 2, input * 3);
+        }
+
+        public class DataResult
+        {
+            public int Doubled { get; set; }
+            public int Tripled { get; set; }
+        }
+
+        public static DataResult GetDataViaCustom(int input)
+        {
+            return new DataResult { Doubled = input * 2, Tripled = input * 3 };
         }
     }
 }
