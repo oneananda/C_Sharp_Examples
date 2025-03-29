@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using System;
+using System.Linq.Expressions;
 
 namespace Handling_MultiValue_Returns
 {
@@ -44,6 +45,16 @@ namespace Handling_MultiValue_Returns
             var dataResult = GetDataViaCustom(5);
             Console.WriteLine($"Doubled: {dataResult.Doubled}, Tripled: {dataResult.Tripled}");
 
+
+            // Methode 4 :KeyValuePair
+            // For returning two related values, KeyValuePair can be used,
+            // although it’s more common for representing pairs in collections.
+
+            Console.WriteLine($"Using KeyValuePair");
+
+            var pair = GetDataViaPair(5);
+            Console.WriteLine($"Doubled: {pair.Key}, Tripled: {pair.Value}");
+
             Console.WriteLine("Handling_MultiValue_Returns!");
             Console.ReadLine(); // Hold the screen
         }
@@ -68,6 +79,11 @@ namespace Handling_MultiValue_Returns
         public static DataResult GetDataViaCustom(int input)
         {
             return new DataResult { Doubled = input * 2, Tripled = input * 3 };
+        }
+
+        public static KeyValuePair<int, int> GetDataViaPair(int input)
+        {
+            return new KeyValuePair<int, int>(input * 2, input * 3);
         }
     }
 }
