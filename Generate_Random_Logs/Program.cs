@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            int numberOfLines = 100; // Change this to the desired number of lines
-            string filePath = "random_log.txt";
+            int numberOfLines = 10000; // Change this to the desired number of lines
+            string filePath = $"random_log.txt";
             GenerateLogFile(filePath, numberOfLines);
             Console.WriteLine($"Log file with {numberOfLines} lines generated at: {Path.GetFullPath(filePath)}");
         }

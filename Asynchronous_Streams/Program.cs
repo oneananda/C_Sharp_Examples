@@ -9,7 +9,9 @@ namespace Asynchronous_Streams
             // This will consume sequences of data asynchronously
             // using IAsyncEnumerable<T> and await foreach.
 
-            await GenerateNumbersAsync.BasicExampele();
+            //await GenerateNumbersAsync.BasicExampele();
+
+            await ReadLogFilesAsync.MediumExampele();
 
             Console.WriteLine("Asynchronous Streams!");
             Console.ReadLine(); // Hold the screen
