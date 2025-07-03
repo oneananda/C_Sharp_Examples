@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace dynamic_Deep_Dive._02_Intermediate
 {
-    internal class Medium
+    public class Medium
     {
         public static void Run()
         {
