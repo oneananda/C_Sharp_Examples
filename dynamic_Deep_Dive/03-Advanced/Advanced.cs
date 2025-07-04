@@ -17,6 +17,9 @@ namespace dynamic_Deep_Dive._03_Advanced
         public static void Run()
         {
             // Dynamic LINQ Queries (System.Linq.Dynamic.Core)
+            // Ensure you have the System.Linq.Dynamic.Core package installed
+            // You can install it via NuGet: Install-Package System.Linq.Dynamic.Core
+
             var people = new List<Person>
             {
                 new Person { Name = "Alice", Age = 22 },
@@ -33,6 +36,15 @@ namespace dynamic_Deep_Dive._03_Advanced
 
             Console.WriteLine("People over 18:");
             foreach (var person in adults)
+            {
+                Console.WriteLine($"{person.Name} ({person.Age})");
+            }
+
+            // dynamic filter by name
+
+            var nameQuery = queryable.Where("Name == @0", "Alice");
+            Console.WriteLine("\nPeople named Alice:");
+            foreach (var person in nameQuery)
             {
                 Console.WriteLine($"{person.Name} ({person.Age})");
             }
