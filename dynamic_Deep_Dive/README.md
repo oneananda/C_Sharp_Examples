@@ -58,4 +58,64 @@ Console.WriteLine(dyn.ToUpper()); // ✅ No cast needed
 
 ---
 
+### 3. **Perfect for Unknown or Changing Types**
+
+* Great for working with:
+
+  * JSON from APIs
+  * ExpandoObject
+  * COM Interop (Office)
+  * Scripting/Plugins
+
+---
+
+### 4. **Cleaner Alternative to Reflection**
+
+Compare this:
+
+```csharp
+object person = new { Name = "Alice" };
+PropertyInfo prop = person.GetType().GetProperty("Name");
+Console.WriteLine(prop.GetValue(person));
+```
+
+To this:
+
+```csharp
+dynamic person = new { Name = "Alice" };
+Console.WriteLine(person.Name); // Much cleaner!
+```
+
+---
+
+### 5. **Works with `ExpandoObject` and `DynamicObject`**
+
+These types are designed to be used with `dynamic`, allowing you to define members at runtime.
+
+```csharp
+dynamic expando = new ExpandoObject();
+expando.Name = "Bob";
+Console.WriteLine(expando.Name); // Output: Bob
+```
+
+---
+
+## ⚠️ When **Not** to Use `dynamic`:
+
+* Performance-critical code (it’s slower).
+* Situations where type safety is crucial.
+* Complex business logic where early compile-time errors are preferable.
+
+---
+
+## 🧠 Summary:
+
+| Concept         | `dynamic` Stands Out Because...                                          |
+| --------------- | ------------------------------------------------------------------------ |
+| **Flexibility** | Handles anything at runtime — methods, properties, even events.          |
+| **Power**       | Feels like duck typing from dynamic languages like Python or JavaScript. |
+| **Simplicity**  | Replaces boilerplate reflection code.                                    |
+| **Risk**        | Sacrifices type safety — easy to misuse.                                 |
+
+---
 
