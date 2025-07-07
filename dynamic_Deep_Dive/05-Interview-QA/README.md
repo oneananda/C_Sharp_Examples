@@ -47,3 +47,36 @@ var query = dbContext.Users
 3. Performance overhead due to late binding.
 4. Cannot be used as a type parameter in generic types or methods.
 
+9) How does `dynamic` interact with reflection?
+
+`dynamic` can simplify reflection by allowing you to call methods and access properties without needing to explicitly use reflection APIs like `MethodInfo` or `PropertyInfo`.
+
+This can make code cleaner and easier to read, but it still incurs the performance cost of late binding.
+```csharp
+dynamic obj = new ExpandoObject();
+obj.Name = "John Doe";
+Console.WriteLine(obj.Name); // Outputs: John Doe
+```
+
+10) Can you use `dynamic` with `ExpandoObject`?
+Yes, `dynamic` works seamlessly with `ExpandoObject`, which allows you to create objects with properties and methods that can be added or modified at runtime.
+```csharp
+dynamic expando = new ExpandoObject();
+expando.Name = "John";
+expando.Age = 30;
+Console.WriteLine($"{expando.Name} is {expando.Age} years old."); // Outputs: John is 30 years old.
+```
+
+11) How does `dynamic` handle exceptions?
+When using `dynamic`, if a method or property does not exist, a `RuntimeBinderException` will be thrown at runtime. This is different from compile-time errors that would occur with statically typed code. It is important to handle these exceptions appropriately to avoid runtime crashes.
+```csharp
+try
+{
+	dynamic obj = "Hello";
+	Console.WriteLine(obj.NonExistentMethod()); // This will throw RuntimeBinderException
+}
+catch (RuntimeBinderException ex)
+{
+	Console.WriteLine($"Error: {ex.Message}");
+}
+```
