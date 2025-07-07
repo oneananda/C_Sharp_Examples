@@ -80,3 +80,11 @@ catch (RuntimeBinderException ex)
 	Console.WriteLine($"Error: {ex.Message}");
 }
 ```
+
+12) What is the difference between `dynamic` and `object` in C#?
+
+`dynamic` allows for late binding, meaning method calls and property accesses are resolved at runtime, while `object` requires explicit casting to access members.
+
+13) Can you use `dynamic` with async methods?
+
+Yes, you can use `dynamic` with async methods. The `dynamic` type can be used to call async methods, and the result will be resolved at runtime.
