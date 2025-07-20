@@ -31,5 +31,4 @@ namespace EventAggregator_Pattern.Core
             }
         }
     }
-
 }
