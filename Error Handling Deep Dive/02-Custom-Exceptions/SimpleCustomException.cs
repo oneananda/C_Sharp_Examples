@@ -14,7 +14,7 @@ namespace Error_Handling_Deep_Dive._02_Custom_Exceptions
 
     class SimpleCustomException
     {
-        static void Main()
+        public static void Run()
         {
             Console.WriteLine("== Simple Custom Exception Demo ==");
 

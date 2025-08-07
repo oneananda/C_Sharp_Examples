@@ -22,7 +22,7 @@ namespace Error_Handling_Deep_Dive._02_Custom_Exceptions
 
     class InheritanceAndInnerExceptions
     {
-        static void Main()
+        public static void Run()
         {
             Console.WriteLine("== Exception Inheritance and InnerException Demo ==");
 
