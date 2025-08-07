@@ -9,6 +9,7 @@
             _01_Basic_Error_Handling.CommonExceptions.Run();
             _02_Custom_Exceptions.SimpleCustomException.Run();
             _02_Custom_Exceptions.InheritanceAndInnerExceptions.Run();
+            _02_Custom_Exceptions.CustomExceptionWithLogging.Run();
             Console.WriteLine("Error_Handling_Deep_Dive!");
         }
     }
