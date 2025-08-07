@@ -14,6 +14,8 @@ This repository contains a collection of C# code examples designed to demonstrat
 - **Unit Testing**: Sample tests using popular testing frameworks.
 - **.NET Core Integration**: Examples of building and running applications on .NET Core.
 - **Advanced Programming Concepts**: In-depth examples covering advanced topics such as reflection, generics, dependency injection, and multi-threading.
+- **Advanced Error Handling**
+A comprehensive guide to advanced error handling in C#, covering custom exceptions, exception filters, logging, fault-tolerant design patterns, and best practices for building resilient applications.
 
 ## Getting Started
 
