@@ -1,4 +1,5 @@
 ﻿using Error_Handling_Deep_Dive._02_Custom_Exceptions;
+using ErrorHandlingDeepDive._02_Custom_Exceptions;
 
 namespace Error_Handling_Deep_Dive
 {
@@ -15,6 +16,7 @@ namespace Error_Handling_Deep_Dive
             
             var validator = new UserInputValidator();
 
+            // Simulating user input validation with a custom exception
             try
             {
                 string userEmail = "invalidemail.com"; // Invalid email
@@ -24,6 +26,22 @@ namespace Error_Handling_Deep_Dive
             {
                 Console.WriteLine($"Error: {ex.Message}");
             }
+
+            // Simulating a database operation that throws a custom exception
+
+            try
+            {
+                ExecuteDatabaseOperation();
+            }
+            catch (DatabaseException dbEx)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Database operation failed!");
+                Console.WriteLine(dbEx.ToString());
+                Console.ResetColor();
+            }
+
+
             Console.WriteLine("Error_Handling_Deep_Dive!");
         }
     }
