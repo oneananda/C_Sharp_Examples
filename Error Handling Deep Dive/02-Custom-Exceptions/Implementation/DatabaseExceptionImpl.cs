@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Error_Handling_Deep_Dive._02_Custom_Exceptions
+namespace Error_Handling_Deep_Dive._02_Custom_Exceptions.Implementation
 {
     public class DatabaseExceptionImpl
     {

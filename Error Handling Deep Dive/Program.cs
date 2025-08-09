@@ -1,4 +1,5 @@
 ﻿using Error_Handling_Deep_Dive._02_Custom_Exceptions;
+using Error_Handling_Deep_Dive._02_Custom_Exceptions.Implementation;
 using ErrorHandlingDeepDive._02_Custom_Exceptions;
 
 namespace Error_Handling_Deep_Dive
@@ -31,7 +32,7 @@ namespace Error_Handling_Deep_Dive
 
             try
             {
-                ExecuteDatabaseOperation();
+                DatabaseExceptionImpl.ExecuteDatabaseOperation();
             }
             catch (DatabaseException dbEx)
             {
@@ -41,6 +42,18 @@ namespace Error_Handling_Deep_Dive
                 Console.ResetColor();
             }
 
+            // Simulating a long-running operation with a timeout
+            try
+            {
+                TimeoutExceptionImpl.SimulateLongRunningOperation("Data Import", TimeSpan.FromSeconds(2));
+            }
+            catch (System.TimeoutException ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Timeout detected!");
+                Console.WriteLine(ex.ToString());
+                Console.ResetColor();
+            }
 
             Console.WriteLine("Error_Handling_Deep_Dive!");
         }
