@@ -54,7 +54,7 @@ namespace Error_Handling_Deep_Dive
                 Console.WriteLine(ex.ToString());
                 Console.ResetColor();
             }
-
+            AggregateCustomExceptionImpl.Run();
             Console.WriteLine("Error_Handling_Deep_Dive!");
         }
     }
