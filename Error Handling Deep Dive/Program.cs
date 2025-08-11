@@ -58,8 +58,10 @@ namespace Error_Handling_Deep_Dive
             AggregateCustomExceptionImpl.Run();
             CustomExceptionWithRetryLogicImpl.Run();
 
-
             LoggingWithTrace.Run();
+
+            NLogExample.Run();
+
             Console.WriteLine("Error_Handling_Deep_Dive!");
         }
     }
