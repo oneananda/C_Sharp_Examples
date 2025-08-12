@@ -11,6 +11,9 @@
             // Timer_Interval_Stream example
             Timer_Interval_Stream.Run();
 
+            // Filtering_and_Transforming_Streams example
+            Filtering_and_Transforming_Streams.Run();
+
             // Keep the console window open
             Console.ReadLine();
         }
