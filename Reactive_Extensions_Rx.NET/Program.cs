@@ -7,6 +7,10 @@
             // BasicObservable example
             BasicObservable.Run();
             Console.WriteLine("Reactive Extensions (Rx.NET)!");
+
+            // Timer_Interval_Stream example
+            Timer_Interval_Stream.Run();
+
             // Keep the console window open
             Console.ReadLine();
         }
