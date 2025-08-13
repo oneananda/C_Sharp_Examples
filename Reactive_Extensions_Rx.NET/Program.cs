@@ -17,6 +17,9 @@
             // Throttle_User_Input example
             Throttle_User_Input.Run();
 
+            // Combining_Streams example
+            Combining_Streams.Run();
+
             // Keep the console window open
             Console.ReadLine();
         }
