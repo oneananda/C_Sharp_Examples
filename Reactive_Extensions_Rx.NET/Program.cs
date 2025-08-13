@@ -14,6 +14,9 @@
             // Filtering_and_Transforming_Streams example
             Filtering_and_Transforming_Streams.Run();
 
+            // Throttle_User_Input example
+            Throttle_User_Input.Run();
+
             // Keep the console window open
             Console.ReadLine();
         }
