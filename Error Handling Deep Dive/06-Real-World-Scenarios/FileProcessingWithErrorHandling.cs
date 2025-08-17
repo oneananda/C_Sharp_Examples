@@ -8,7 +8,7 @@ namespace Error_Handling_Deep_Dive._06_Real_World_Scenarios
 {
     class FileProcessingWithErrorHandling
     {
-        public static void Run(string[] args)
+        public static void Run()
         {
             string filePath = "data.txt";
 
