@@ -1,6 +1,7 @@
 ﻿using Error_Handling_Deep_Dive._02_Custom_Exceptions;
 using Error_Handling_Deep_Dive._02_Custom_Exceptions.Implementation;
 using Error_Handling_Deep_Dive._03_Logging_And_Diagnostics;
+using Error_Handling_Deep_Dive._06_Real_World_Scenarios;
 using ErrorHandlingDeepDive._02_Custom_Exceptions;
 
 namespace Error_Handling_Deep_Dive
@@ -61,6 +62,8 @@ namespace Error_Handling_Deep_Dive
             LoggingWithTrace.Run();
 
             NLogExample.Run();
+
+            FileProcessingWithErrorHandling.Run();
 
             Console.WriteLine("Error_Handling_Deep_Dive!");
         }
