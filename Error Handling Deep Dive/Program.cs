@@ -64,7 +64,7 @@ namespace Error_Handling_Deep_Dive
             NLogExample.Run();
 
             FileProcessingWithErrorHandling.Run();
-            APIErrorResponseModel.Run();
+            ApiSimulator.Run();
 
             Console.WriteLine("Error_Handling_Deep_Dive!");
         }
