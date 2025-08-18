@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading_Deep_Dive", "Threading_Deep_Dive.csproj", "{C0E24AAD-CC4B-4725-A46E-0B2B15BCF494}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0E24AAD-CC4B-4725-A46E-0B2B15BCF494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E24AAD-CC4B-4725-A46E-0B2B15BCF494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E24AAD-CC4B-4725-A46E-0B2B15BCF494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E24AAD-CC4B-4725-A46E-0B2B15BCF494}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5196E3BE-3600-492C-ABB7-972C1C875615}
+	EndGlobalSection
+EndGlobal
