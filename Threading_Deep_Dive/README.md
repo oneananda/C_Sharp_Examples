@@ -1,6 +1,6 @@
 # Threading Deep Dive
 
-## Program #1
+## Program #1 - EnterScope_Example
 
 **Key points:**
 
@@ -19,5 +19,3 @@ lock (_lock)
 {
     _counter++;
 }
-
-If the target is a System.Threading.Lock, the compiler will emit code equivalent to EnterScope() + Dispose(), not Monitor.Enter/Exit.
