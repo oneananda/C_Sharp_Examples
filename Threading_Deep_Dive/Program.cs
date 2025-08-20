@@ -9,6 +9,8 @@
 
             EnterScope_Example.EnterScope_Example.EnterScopeMethod (() => Console.WriteLine("Hello, World!"));
 
+            LockVsMonitor.Run();
+
             Console.WriteLine("Threading Deep Dive!");
         }
     }
