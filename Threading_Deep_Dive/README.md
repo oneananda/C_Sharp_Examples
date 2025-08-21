@@ -22,4 +22,8 @@ lock (_lock)
 
 ## Program 1 - LockVsMonitor
 
-The difference between the Lock and Monitor with examples 
+The difference between the Lock and Monitor with examples
+
+## Program 2 - Read Write Lock Slim
+
+Explains about thread safe cache
