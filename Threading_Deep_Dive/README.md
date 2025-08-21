@@ -1,6 +1,6 @@
 # Threading Deep Dive
 
-## Program #1 - EnterScope_Example
+## EnterScope_Example
 
 **Key points:**
 
@@ -19,3 +19,7 @@ lock (_lock)
 {
     _counter++;
 }
+
+## Program 1 - LockVsMonitor
+
+The difference between the Lock and Monitor with examples 
